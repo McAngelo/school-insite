@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run build && nodemon server.js",
+    "start": "nodemon server.js",
     "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi ",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
