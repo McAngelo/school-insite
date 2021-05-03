@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "nodemon server.js",
+    "dev-start": "clear && npm run build && nodemon server.js",
     "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi ",
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 8567",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
