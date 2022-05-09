@@ -53,9 +53,9 @@ import { EmailSettingsComponent } from './settings/email-settings/email-settings
 import { InvoiceSettingsComponent } from './settings/invoice-settings/invoice-settings.component';
 import { SalarySettingsComponent } from './settings/salary-settings/salary-settings.component';
 import { NotificationsComponent } from './settings/notifications/notifications.component';
-import { ChangePasswordComponent } from './settings/change-password/change-password.component';;
-import { LeaveTypeComponent } from './settings/leave-type/leave-type.component'
-
+import { ChangePasswordComponent } from './settings/change-password/change-password.component';
+import { LeaveTypeComponent } from './settings/leave-type/leave-type.component';
+import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component'
 
 
 
@@ -115,8 +115,8 @@ import { LeaveTypeComponent } from './settings/leave-type/leave-type.component'
     SalarySettingsComponent,
     NotificationsComponent ,
     ChangePasswordComponent,
-    LeaveTypeComponent
-
+    LeaveTypeComponent,
+    TeacherListComponent
 
 
 
@@ -135,6 +135,10 @@ import { LeaveTypeComponent } from './settings/leave-type/leave-type.component'
                   {
                       path: 'all',
                       component: AllTeachersComponent
+                  },
+                  {
+                      path: 'list',
+                      component: TeacherListComponent
                   },
                   {
                       path: 'add',
