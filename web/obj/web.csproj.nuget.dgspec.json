@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mj-consult/Projects/c-sharp-projects/school-insite/web/web.csproj": {}
+    "/Users/mj-consult/Projects/school-insite/web/web.csproj": {}
   },
   "projects": {
-    "/Users/mj-consult/Projects/c-sharp-projects/school-insite/web/web.csproj": {
+    "/Users/mj-consult/Projects/school-insite/web/web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/web/web.csproj",
+        "projectUniqueName": "/Users/mj-consult/Projects/school-insite/web/web.csproj",
         "projectName": "web",
-        "projectPath": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/web/web.csproj",
+        "projectPath": "/Users/mj-consult/Projects/school-insite/web/web.csproj",
         "packagesPath": "/Users/mj-consult/.nuget/packages/",
-        "outputPath": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/web/obj/",
+        "outputPath": "/Users/mj-consult/Projects/school-insite/web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mj-consult/.config/NuGet/NuGet.Config"

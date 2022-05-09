@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OORjM1g8Q+Cm+FcqoqyCNykNqyrp1xeyt8SW32O4guP9JVbHuDZBp1MJl/jkYXOprzxQLIGWSQCDD1aGmv/sNg==",
+  "dgSpecHash": "mH4OWOnoCVweHyrokB8iR0awXEsRfENAnCt79nPmOpld8d2n/qIJ4gUQAdDDLc1qYH1Tnbo2G4VehcFL3RaHFw==",
   "success": true,
-  "projectFilePath": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/api/api.csproj",
+  "projectFilePath": "/Users/mj-consult/Projects/school-insite/api/api.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

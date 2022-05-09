@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mj-consult/Projects/c-sharp-projects/school-insite/api/api.csproj": {}
+    "/Users/mj-consult/Projects/school-insite/api/api.csproj": {}
   },
   "projects": {
-    "/Users/mj-consult/Projects/c-sharp-projects/school-insite/api/api.csproj": {
+    "/Users/mj-consult/Projects/school-insite/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/api/api.csproj",
+        "projectUniqueName": "/Users/mj-consult/Projects/school-insite/api/api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/api/api.csproj",
+        "projectPath": "/Users/mj-consult/Projects/school-insite/api/api.csproj",
         "packagesPath": "/Users/mj-consult/.nuget/packages/",
-        "outputPath": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/api/obj/",
+        "outputPath": "/Users/mj-consult/Projects/school-insite/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mj-consult/.config/NuGet/NuGet.Config"

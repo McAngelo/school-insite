@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q4VMNGDYBkkRsMAOkWvk4REwscdJHFW6T9YLN9kvRB0c7Sm5nU0mup8PZ1W247HDCVT2jsvnkbUxHRePPt4BaQ==",
+  "dgSpecHash": "JerG3/c4JS0vtmDgrLKIn6NAZFRND7WtjMDtW3p1jO2LHvNHzqyBlIblLFGaBBxLicScbkEzfDotEoo+RBpwtQ==",
   "success": true,
-  "projectFilePath": "/Users/mj-consult/Projects/c-sharp-projects/school-insite/web/web.csproj",
+  "projectFilePath": "/Users/mj-consult/Projects/school-insite/web/web.csproj",
   "expectedPackageFiles": [
     "/Users/mj-consult/.nuget/packages/microsoft.aspnetcore.nodeservices/3.1.24/microsoft.aspnetcore.nodeservices.3.1.24.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/microsoft.aspnetcore.spaservices/3.1.24/microsoft.aspnetcore.spaservices.3.1.24.nupkg.sha512",

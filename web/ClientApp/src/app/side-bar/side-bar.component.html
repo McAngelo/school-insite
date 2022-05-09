@@ -76,43 +76,23 @@
                 <li class="submenu">
                     <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('report')" [ngClass]="r_status ? 'active subdrop' : ''"><i class="fa fa-files-o" aria-hidden="true"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': r_status ? 'block' : 'none'}">
-                        <li><a href="expense-reports.html"> Expense Report </a></li>
-                        <li><a href="invoice-reports.html"> Invoice Report </a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/reports/expense']"> Expense Report </a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/reports/invoice']"> Invoice Report </a></li>
                     </ul>
                 </li>
                 <li class="submenu">
                     <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('settings')" [ngClass]="st_status ? 'active subdrop' : ''"><i class="fa fa-cogs" aria-hidden="true"></i> <span>Settings </span> <span class="menu-arrow"></span></a>
                     <ul [ngStyle]="{'display': st_status ? 'block' : 'none'}">
-                        <li class="active">
-                            <a href="settings.html">School Settings</a>
-                        </li>
-                        <li>
-                            <a href="localization.html">Localization</a>
-                        </li>
-                        <li>
-                            <a href="theme-settings.html">Theme Settings</a>
-                        </li>
-                        <li>
-                            <a href="roles-permissions.html">Roles & Permissions</a>
-                        </li>
-                        <li>
-                            <a href="email-settings.html">Email Settings</a>
-                        </li>
-                        <li>
-                            <a href="invoice-settings.html">Invoice Settings</a>
-                        </li>
-                        <li>
-                            <a href="salary-settings.html">Salary Settings</a>
-                        </li>
-                        <li>
-                            <a href="notifications-settings.html">Notifications</a>
-                        </li>
-                        <li>
-                            <a href="change-password.html">Change Password</a>
-                        </li>
-                        <li>
-                            <a href="leave-type.html">Leave Type</a>
-                        </li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/school-info']"> School Settings</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/localization']"> Localization</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/theme']"> Theme Settings</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/roles-permissions']"> Roles & Permissions</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/email']"> Email Settings</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/invoice']"> Invoice Settings</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/salary']"> Salary Settings</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/notifications']"> Notifications</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/change-password']"> Change Password</a> </li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/settings/leave-type']"> Leave Type</a></li>
                     </ul>
                 </li>
             </ul>

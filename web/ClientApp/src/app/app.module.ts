@@ -43,7 +43,18 @@ import { ProvidentFundComponent } from './accounts/provident-fund/provident-fund
 import { TaxesComponent } from './accounts/taxes/taxes.component';
 import { EmployeeSalaryComponent } from './payroll/employee-salary/employee-salary.component';
 import { PayslipComponent } from './payroll/payslip/payslip.component';
-
+import { ExpenseReportComponent } from './reports/expense-report/expense-report.component';
+import { InvoiceReportComponent } from './reports/invoice-report/invoice-report.component';
+import { SchoolSettingsComponent } from './settings/school-settings/school-settings.component';
+import { LocalizationComponent } from './settings/localization/localization.component';
+import { ThemeSettingsComponent } from './settings/theme-settings/theme-settings.component';
+import { RolesPermissionsComponent } from './settings/roles-permissions/roles-permissions.component';
+import { EmailSettingsComponent } from './settings/email-settings/email-settings.component';
+import { InvoiceSettingsComponent } from './settings/invoice-settings/invoice-settings.component';
+import { SalarySettingsComponent } from './settings/salary-settings/salary-settings.component';
+import { NotificationsComponent } from './settings/notifications/notifications.component';
+import { ChangePasswordComponent } from './settings/change-password/change-password.component';;
+import { LeaveTypeComponent } from './settings/leave-type/leave-type.component'
 
 
 
@@ -92,12 +103,19 @@ import { PayslipComponent } from './payroll/payslip/payslip.component';
     ProvidentFundComponent,
     TaxesComponent,
     EmployeeSalaryComponent,
-    PayslipComponent
-
-
-
-
-
+    PayslipComponent,
+    ExpenseReportComponent,
+    InvoiceReportComponent,
+    SchoolSettingsComponent,
+    LocalizationComponent,
+    ThemeSettingsComponent,
+    RolesPermissionsComponent,
+    EmailSettingsComponent,
+    InvoiceSettingsComponent,
+    SalarySettingsComponent,
+    NotificationsComponent ,
+    ChangePasswordComponent,
+    LeaveTypeComponent
 
 
 
@@ -265,6 +283,66 @@ import { PayslipComponent } from './payroll/payslip/payslip.component';
                   {
                       path: 'pay-slip',
                       component: PayslipComponent
+                  }
+              ]
+          },
+          {
+              path: 'reports',
+              children: [
+                  { path: '', redirectTo: 'expense', pathMatch: 'prefix' },
+                  {
+                      path: 'expense',
+                      component: ExpenseReportComponent
+                  },
+                  {
+                      path: 'invoice',
+                      component: InvoiceReportComponent
+                  }
+              ]
+          },
+          {
+              path: 'settings',
+              children: [
+                  { path: '', redirectTo: 'school-info', pathMatch: 'prefix' },
+                  {
+                      path: 'school-info',
+                      component: SchoolSettingsComponent
+                  },
+                  {
+                      path: 'localization',
+                      component: LocalizationComponent
+                  },
+                  {
+                      path: 'theme',
+                      component: ThemeSettingsComponent
+                  },
+                  {
+                      path: 'roles-permissions',
+                      component: RolesPermissionsComponent
+                  },
+                  {
+                      path: 'email',
+                      component: EmailSettingsComponent
+                  },
+                  {
+                      path: 'invoice',
+                      component: InvoiceSettingsComponent
+                  },
+                  {
+                      path: 'salary',
+                      component: SalarySettingsComponent
+                  },
+                  {
+                      path: 'notifications',
+                      component: NotificationsComponent
+                  },
+                  {
+                      path: 'change-password',
+                      component: ChangePasswordComponent
+                  },
+                  {
+                      path: 'leave-type',
+                      component: LeaveTypeComponent
                   }
               ]
           },
