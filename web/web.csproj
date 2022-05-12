@@ -23,9 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\email\" />
-    <None Remove="ClientApp\src\app\payroll\" />
-    <None Remove="ClientApp\src\app\reports\" />
     <None Remove="ClientApp\src\app\layout\" />
     <None Remove="ClientApp\src\app\modules\" />
     <None Remove="ClientApp\src\app\error\" />
@@ -42,11 +39,14 @@
     <None Remove="ClientApp\src\app\modules\tools\componnents\school-calendar\" />
     <None Remove="ClientApp\src\app\modules\tools\componnents\holidays\" />
     <None Remove="ClientApp\src\app\modules\communications\components\" />
+    <None Remove="ClientApp\src\app\modules\dashboard\components\" />
+    <None Remove="ClientApp\src\app\modules\dashboard\components\dashboard\" />
+    <None Remove="ClientApp\src\app\modules\tools\componnents\counter\" />
+    <None Remove="ClientApp\src\app\modules\tools\componnents\fetch-data\" />
+    <None Remove="ClientApp\src\app\modules\payments\components\" />
+    <None Remove="ClientApp\src\app\modules\reports\components\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientApp\src\app\email\" />
-    <Folder Include="ClientApp\src\app\payroll\" />
-    <Folder Include="ClientApp\src\app\reports\" />
     <Folder Include="ClientApp\src\app\layout\" />
     <Folder Include="ClientApp\src\app\modules\" />
     <Folder Include="ClientApp\src\app\modules\auth\components\" />
@@ -62,6 +62,12 @@
     <Folder Include="ClientApp\src\app\modules\tools\componnents\school-calendar\" />
     <Folder Include="ClientApp\src\app\modules\tools\componnents\holidays\" />
     <Folder Include="ClientApp\src\app\modules\communications\components\" />
+    <Folder Include="ClientApp\src\app\modules\dashboard\components\" />
+    <Folder Include="ClientApp\src\app\modules\dashboard\components\dashboard\" />
+    <Folder Include="ClientApp\src\app\modules\tools\componnents\counter\" />
+    <Folder Include="ClientApp\src\app\modules\tools\componnents\fetch-data\" />
+    <Folder Include="ClientApp\src\app\modules\payments\components\" />
+    <Folder Include="ClientApp\src\app\modules\reports\components\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
