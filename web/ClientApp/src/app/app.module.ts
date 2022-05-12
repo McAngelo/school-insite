@@ -21,10 +21,6 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 
-import { AllParentsComponent } from './parents/all-parents/all-parents.component';
-import { AddParentComponent } from './parents/add-parent/add-parent.component';
-import { EditParentComponent } from './parents/edit-parent/edit-parent.component';
-import { ParentDetailsComponent } from './parents/parent-details/parent-details.component';
 import { SchoolCalendarComponent } from './school-calendar/school-calendar.component';
 import { EmailInboxComponent } from './email/email-inbox/email-inbox.component';
 import { ComposeEmailComponent } from './email/compose-email/compose-email.component';

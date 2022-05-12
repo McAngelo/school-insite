@@ -2,15 +2,11 @@
   <MonoDevelop.Ide.ItemProperties.web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/app-routing.module.ts">
     <Files>
-      <File FileName="web/ClientApp/src/app/modules/students/components/all-students/all-students.component.html" Line="69" Column="68" />
-      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="34" Column="64" />
-      <File FileName="web/ClientApp/src/app/modules/students/components/student-list/student-list.component.html" Line="101" Column="74" />
-      <File FileName="web/ClientApp/src/app/modules/teachers/components/teacher-list/teacher-list.component.html" Line="591" Column="7" />
-      <File FileName="web/ClientApp/src/app/modules/teachers/index.ts" Line="1" Column="9" />
-      <File FileName="web/ClientApp/src/app/modules/teachers/teachers.module.ts" Line="6" Column="1" />
-      <File FileName="web/ClientApp/src/app/app.module.ts" Line="23" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/teachers/teachers-routing.module.ts" Line="11" Column="1" />
-      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="14" Column="11" />
+      <File FileName="web/ClientApp/src/app/app.module.ts" Line="16" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/parents/parents.module.ts" Line="6" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/parents/index.ts" Line="1" Column="9" />
+      <File FileName="web/ClientApp/src/app/modules/parents/parents-routing.module.ts" Line="11" Column="1" />
+      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="16" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,8 +20,7 @@
                       <Node name="side-bar" expanded="True" />
                     </Node>
                     <Node name="modules" expanded="True">
-                      <Node name="auth" expanded="True" />
-                      <Node name="teachers" expanded="True">
+                      <Node name="parents" expanded="True">
                         <Node name="components" expanded="True" />
                       </Node>
                     </Node>

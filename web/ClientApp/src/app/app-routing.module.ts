@@ -13,28 +13,7 @@ import {
           { path: 'dashboard', component: DashboardComponent },
           ,
           
-          {
-              path: 'parents',
-              children: [
-                  { path: '', redirectTo: 'all', pathMatch: 'prefix' },
-                  {
-                      path: 'all',
-                      component: AllParentsComponent
-                  },
-                  {
-                      path: 'add',
-                      component: AddParentComponent
-                  },
-                  {
-                      path: 'edit',
-                      component: EditParentComponent
-                  },
-                  {
-                      path: 'details',
-                      component: ParentDetailsComponent
-                  },
-              ]
-          },
+          
           {
               path: 'email',
               children: [
@@ -168,6 +147,11 @@ const routes: Routes = [
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/students/students.module').then(m => m.StudentsModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/parents/parents.module').then(m => m.ParentsModule)
     },
     {
         path: '',
