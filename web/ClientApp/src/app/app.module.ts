@@ -55,8 +55,12 @@ import { SalarySettingsComponent } from './settings/salary-settings/salary-setti
 import { NotificationsComponent } from './settings/notifications/notifications.component';
 import { ChangePasswordComponent } from './settings/change-password/change-password.component';
 import { LeaveTypeComponent } from './settings/leave-type/leave-type.component';
-import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component'
-
+import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { ForgottenPasswordComponent } from './auth/forgotten-password/forgotten-password.component';
+import { ValidateAccountComponent } from './auth/validate-account/validate-account.component';
+import { ChangePasswordClientComponent } from './auth/change-password-client/change-password-client.component'
 
 
 
@@ -116,11 +120,19 @@ import { TeacherListComponent } from './teachers/teacher-list/teacher-list.compo
     NotificationsComponent ,
     ChangePasswordComponent,
     LeaveTypeComponent,
-    TeacherListComponent
+    TeacherListComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgottenPasswordComponent,
+    ValidateAccountComponent,
+    ChangePasswordClientComponent
 
 
 
-    ],
+
+
+
+  ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
