@@ -210,8 +210,14 @@ const routes: Routes = [
         component: ErrorLayoutComponent,
         loadChildren: () => import('./modules/error/error.module').then(m => m.ErrorModule)
     },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/settings/settings.module').then(m => m.SettingsModule)
+    },
     
     { path: '**', redirectTo: 'auth' },
+
     //{ path: '**', redirectTo: 'not-found' },
 
 ];
