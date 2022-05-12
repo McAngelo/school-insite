@@ -11,32 +11,7 @@ import {
     RouterModule.forRoot([
           { path: '', component: DashboardComponent, pathMatch: 'full' },
           { path: 'dashboard', component: DashboardComponent },
-          {
-              path: 'teachers',
-              children: [
-                  { path: '', redirectTo: 'all', pathMatch: 'prefix' },
-                  {
-                      path: 'all',
-                      component: AllTeachersComponent
-                  },
-                  {
-                      path: 'list',
-                      component: TeacherListComponent
-                  },
-                  {
-                      path: 'add',
-                      component: AddTeacherComponent
-                  },
-                  {
-                      path: 'edit',
-                      component: EditTeacherComponent
-                  },
-                  {
-                      path: 'details',
-                      component: TeacherDetailsComponent
-                  },
-              ]
-          },
+          ,
           
           {
               path: 'parents',
@@ -193,6 +168,11 @@ const routes: Routes = [
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/students/students.module').then(m => m.StudentsModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/teachers/teachers.module').then(m => m.TeachersModule)
     },
     {
         path: '',

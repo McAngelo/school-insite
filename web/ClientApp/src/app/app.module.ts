@@ -20,10 +20,7 @@ import {
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
-import { AllTeachersComponent } from './teachers/all-teachers/all-teachers.component';
-import { AddTeacherComponent } from './teachers/add-teacher/add-teacher.component';
-import { EditTeacherComponent } from './teachers/edit-teacher/edit-teacher.component';
-import { TeacherDetailsComponent } from './teachers/teacher-details/teacher-details.component';
+
 import { AllParentsComponent } from './parents/all-parents/all-parents.component';
 import { AddParentComponent } from './parents/add-parent/add-parent.component';
 import { EditParentComponent } from './parents/edit-parent/edit-parent.component';
