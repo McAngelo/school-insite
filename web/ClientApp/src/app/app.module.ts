@@ -60,7 +60,14 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ForgottenPasswordComponent } from './auth/forgotten-password/forgotten-password.component';
 import { ValidateAccountComponent } from './auth/validate-account/validate-account.component';
-import { ChangePasswordClientComponent } from './auth/change-password-client/change-password-client.component'
+import { ChangePasswordClientComponent } from './auth/change-password-client/change-password-client.component';
+import { InteralServerErrorComponent } from './error/interal-server-error/interal-server-error.component';
+import { NotFoundErrorComponent } from './error/not-found-error/not-found-error.component';
+import { AccessDeniedErrorComponent } from './error/access-denied-error/access-denied-error.component';
+import { AuthenticationLayoutComponent } from './layout/authentication-layout/authentication-layout.component';
+import { ErrorLayoutComponent } from './layout/error-layout/error-layout.component';
+import { PortalLayoutComponent } from './layout/portal-layout/portal-layout.component'
+
 
 
 
@@ -125,12 +132,16 @@ import { ChangePasswordClientComponent } from './auth/change-password-client/cha
     RegisterComponent,
     ForgottenPasswordComponent,
     ValidateAccountComponent,
-    ChangePasswordClientComponent
-
-
-
-
-
+    ChangePasswordClientComponent,
+    InteralServerErrorComponent,
+    NotFoundErrorComponent,
+    AccessDeniedErrorComponent
+,
+    AuthenticationLayoutComponent
+,
+    ErrorLayoutComponent
+,
+    PortalLayoutComponent
 
   ],
   imports: [
