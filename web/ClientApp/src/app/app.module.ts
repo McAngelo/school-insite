@@ -19,7 +19,7 @@ import {
 /*import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { AllTeachersComponent } from './teachers/all-teachers/all-teachers.component';
 import { AddTeacherComponent } from './teachers/add-teacher/add-teacher.component';
 import { EditTeacherComponent } from './teachers/edit-teacher/edit-teacher.component';

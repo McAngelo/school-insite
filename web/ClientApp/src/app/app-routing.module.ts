@@ -207,13 +207,18 @@ const routes: Routes = [
     },
     {
         path: '',
-        component: ErrorLayoutComponent,
-        loadChildren: () => import('./modules/error/error.module').then(m => m.ErrorModule)
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
     },
     {
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/settings/settings.module').then(m => m.SettingsModule)
+    },
+    {
+        path: '',
+        component: ErrorLayoutComponent,
+        loadChildren: () => import('./modules/error/error.module').then(m => m.ErrorModule)
     },
     
     { path: '**', redirectTo: 'auth' },
