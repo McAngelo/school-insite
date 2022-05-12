@@ -8,17 +8,23 @@
                     <a [routerLink]="['/dashboard']"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
                 </li>
                 <li class="" [routerLinkActive]="['active']">
-                    <a [routerLink]="['/teachers']"><i class="fa fa-user" aria-hidden="true"></i> Teachers</a>
+                    <a [routerLink]="['/students/']"><i class="fa fa-users" aria-hidden="true"></i> Students</a>
+                </li>
+                <li class="" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/parents/']"><i class="fa fa-user-o" aria-hidden="true"></i> Parents</a>
+                </li>
+                <li class="" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/teachers/']"><i class="fa fa-user" aria-hidden="true"></i> Teachers</a>
                 </li>
                 <!--<li class="submenu">
-                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('teacher')" [ngClass]="t_status ? 'active subdrop' : ''"><i class="fa fa-user" aria-hidden="true"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
-                    <ul class="list-unstyled" [ngStyle]="{'display': t_status ? 'block' : 'none'}">
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/all']">All Teachers</a></li>
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/add']">Add Teacher</a></li>
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/edit']">Edit Teacher</a></li>
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/details']">About Teacher</a></li>
-                    </ul>
-                </li>-->
+        <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('teacher')" [ngClass]="t_status ? 'active subdrop' : ''"><i class="fa fa-user" aria-hidden="true"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
+        <ul class="list-unstyled" [ngStyle]="{'display': t_status ? 'block' : 'none'}">
+            <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/all']">All Teachers</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/add']">Add Teacher</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/edit']">Edit Teacher</a></li>
+            <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/details']">About Teacher</a></li>
+        </ul>
+    </li>
                 <li class="submenu">
                     <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('student')" [ngClass]="s_status ? 'active subdrop' : ''"><i class="fa fa-users" aria-hidden="true"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': s_status ? 'block' : 'none'}">
@@ -36,7 +42,7 @@
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/parents/edit']">Edit Parent</a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/parents/details']">About Parent</a></li>
                     </ul>
-                </li>
+                </li>-->
                 <li class="" [routerLinkActive]="['active']">
                     <a [routerLink]="['/school-calendar']"><i class="fa fa-calendar" aria-hidden="true"></i> School Calendar</a>
                 </li>

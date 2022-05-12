@@ -24,10 +24,6 @@ import { AllTeachersComponent } from './teachers/all-teachers/all-teachers.compo
 import { AddTeacherComponent } from './teachers/add-teacher/add-teacher.component';
 import { EditTeacherComponent } from './teachers/edit-teacher/edit-teacher.component';
 import { TeacherDetailsComponent } from './teachers/teacher-details/teacher-details.component';
-import { AllStudentsComponent } from './students/all-students/all-students.component';
-import { AddStudentsComponent } from './students/add-students/add-students.component';
-import { EditStudentComponent } from './students/edit-student/edit-student.component';
-import { StudentDetailsComponent } from './students/student-details/student-details.component';
 import { AllParentsComponent } from './parents/all-parents/all-parents.component';
 import { AddParentComponent } from './parents/add-parent/add-parent.component';
 import { EditParentComponent } from './parents/edit-parent/edit-parent.component';

@@ -37,28 +37,7 @@ import {
                   },
               ]
           },
-          {
-              path: 'students',
-              children: [
-                  { path: '', redirectTo: 'all', pathMatch: 'prefix' },
-                  {
-                      path: 'all',
-                      component: AllStudentsComponent
-                  },
-                  {
-                      path: 'add',
-                      component: AddStudentsComponent
-                  },
-                  {
-                      path: 'edit',
-                      component: EditStudentComponent
-                  },
-                  {
-                      path: 'details',
-                      component: StudentDetailsComponent
-                  },
-              ]
-          },
+          
           {
               path: 'parents',
               children: [
@@ -209,6 +188,11 @@ const routes: Routes = [
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/students/students.module').then(m => m.StudentsModule)
     },
     {
         path: '',
