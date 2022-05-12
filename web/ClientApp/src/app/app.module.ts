@@ -3,13 +3,22 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
+import {
+    NavMenuComponent,
+    SideBarComponent,
+    AuthenticationLayoutComponent,
+    ErrorLayoutComponent,
+    PortalLayoutComponent
+} from './layout';
+
+
+
+/*import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AllTeachersComponent } from './teachers/all-teachers/all-teachers.component';
 import { AddTeacherComponent } from './teachers/add-teacher/add-teacher.component';
@@ -56,17 +65,12 @@ import { NotificationsComponent } from './settings/notifications/notifications.c
 import { ChangePasswordComponent } from './settings/change-password/change-password.component';
 import { LeaveTypeComponent } from './settings/leave-type/leave-type.component';
 import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { ForgottenPasswordComponent } from './auth/forgotten-password/forgotten-password.component';
-import { ValidateAccountComponent } from './auth/validate-account/validate-account.component';
-import { ChangePasswordClientComponent } from './auth/change-password-client/change-password-client.component';
+
+
 import { InteralServerErrorComponent } from './error/interal-server-error/interal-server-error.component';
 import { NotFoundErrorComponent } from './error/not-found-error/not-found-error.component';
-import { AccessDeniedErrorComponent } from './error/access-denied-error/access-denied-error.component';
-import { AuthenticationLayoutComponent } from './layout/authentication-layout/authentication-layout.component';
-import { ErrorLayoutComponent } from './layout/error-layout/error-layout.component';
-import { PortalLayoutComponent } from './layout/portal-layout/portal-layout.component'
+import { AccessDeniedErrorComponent } from './error/access-denied-error/access-denied-error.component';*/
+
 
 
 
@@ -78,10 +82,14 @@ import { PortalLayoutComponent } from './layout/portal-layout/portal-layout.comp
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent,
+    SideBarComponent,
+    AuthenticationLayoutComponent,
+    ErrorLayoutComponent,
+    PortalLayoutComponent
+
+    /*HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    SideBarComponent,
     DashboardComponent,
     AllTeachersComponent,
     TeacherDetailsComponent,
@@ -135,251 +143,24 @@ import { PortalLayoutComponent } from './layout/portal-layout/portal-layout.comp
     ChangePasswordClientComponent,
     InteralServerErrorComponent,
     NotFoundErrorComponent,
-    AccessDeniedErrorComponent
-,
-    AuthenticationLayoutComponent
-,
-    ErrorLayoutComponent
-,
-    PortalLayoutComponent
+    AccessDeniedErrorComponent,*/
+
+
+
+
+
+
+
+
+
 
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-      RouterModule.forRoot([
-          { path: '', component: DashboardComponent, pathMatch: 'full' },
-          { path: 'dashboard', component: DashboardComponent },
-          {
-              path: 'teachers',
-              children: [
-                  { path: '', redirectTo: 'all', pathMatch: 'prefix' },
-                  {
-                      path: 'all',
-                      component: AllTeachersComponent
-                  },
-                  {
-                      path: 'list',
-                      component: TeacherListComponent
-                  },
-                  {
-                      path: 'add',
-                      component: AddTeacherComponent
-                  },
-                  {
-                      path: 'edit',
-                      component: EditTeacherComponent
-                  },
-                  {
-                      path: 'details',
-                      component: TeacherDetailsComponent
-                  },
-              ]
-          },
-          {
-              path: 'students',
-              children: [
-                  { path: '', redirectTo: 'all', pathMatch: 'prefix' },
-                  {
-                      path: 'all',
-                      component: AllStudentsComponent
-                  },
-                  {
-                      path: 'add',
-                      component: AddStudentsComponent
-                  },
-                  {
-                      path: 'edit',
-                      component: EditStudentComponent
-                  },
-                  {
-                      path: 'details',
-                      component: StudentDetailsComponent
-                  },
-              ]
-          },
-          {
-              path: 'parents',
-              children: [
-                  { path: '', redirectTo: 'all', pathMatch: 'prefix' },
-                  {
-                      path: 'all',
-                      component: AllParentsComponent
-                  },
-                  {
-                      path: 'add',
-                      component: AddParentComponent
-                  },
-                  {
-                      path: 'edit',
-                      component: EditParentComponent
-                  },
-                  {
-                      path: 'details',
-                      component: ParentDetailsComponent
-                  },
-              ]
-          },
-          {
-              path: 'email',
-              children: [
-                  { path: '', redirectTo: 'inbox', pathMatch: 'prefix' },
-                  {
-                      path: 'inbox',
-                      component: EmailInboxComponent
-                  },
-                  {
-                      path: 'compose',
-                      component: ComposeEmailComponent
-                  },
-                  {
-                      path: 'view',
-                      component: EmailViewComponent
-                  }
-              ]
-          },
-          {
-              path: 'management',
-              children: [
-                  { path: '', redirectTo: 'all-employees', pathMatch: 'prefix' },
-                  {
-                      path: 'all-employees',
-                      component: EmployeesComponent
-                  },
-                  {
-                      path: 'leave-requests',
-                      component: LeaveRequestsComponent
-                  },
-                  {
-                      path: 'attendance',
-                      component: AttendanceComponent
-                  },
-                  {
-                      path: 'departments',
-                      component: DepartmentsComponent
-                  },
-                  {
-                      path: 'designations',
-                      component: DesignationsComponent
-                  },
-                  {
-                      path: 'activities',
-                      component: ActivitiesComponent
-                  },
-                  {
-                      path: 'users',
-                      component: UsersComponent
-                  }
-              ]
-          },
-          {
-              path: 'accounts',
-              children: [
-                  { path: '', redirectTo: 'invoices', pathMatch: 'prefix' },
-                  {
-                      path: 'invoices',
-                      component: InvoicesComponent
-                  },
-                  {
-                      path: 'payments',
-                      component: PaymentsComponent
-                  },
-                  {
-                      path: 'expenses',
-                      component: ExpensesComponent
-                  },
-                  {
-                      path: 'provident-fund',
-                      component: ProvidentFundComponent
-                  },
-                  {
-                      path: 'taxes',
-                      component: TaxesComponent
-                  }
-              ]
-          },
-          {
-              path: 'payroll',
-              children: [
-                  { path: '', redirectTo: 'employee-salary', pathMatch: 'prefix' },
-                  {
-                      path: 'employee-salary',
-                      component: EmployeeSalaryComponent
-                  },
-                  {
-                      path: 'pay-slip',
-                      component: PayslipComponent
-                  }
-              ]
-          },
-          {
-              path: 'reports',
-              children: [
-                  { path: '', redirectTo: 'expense', pathMatch: 'prefix' },
-                  {
-                      path: 'expense',
-                      component: ExpenseReportComponent
-                  },
-                  {
-                      path: 'invoice',
-                      component: InvoiceReportComponent
-                  }
-              ]
-          },
-          {
-              path: 'settings',
-              children: [
-                  { path: '', redirectTo: 'school-info', pathMatch: 'prefix' },
-                  {
-                      path: 'school-info',
-                      component: SchoolSettingsComponent
-                  },
-                  {
-                      path: 'localization',
-                      component: LocalizationComponent
-                  },
-                  {
-                      path: 'theme',
-                      component: ThemeSettingsComponent
-                  },
-                  {
-                      path: 'roles-permissions',
-                      component: RolesPermissionsComponent
-                  },
-                  {
-                      path: 'email',
-                      component: EmailSettingsComponent
-                  },
-                  {
-                      path: 'invoice',
-                      component: InvoiceSettingsComponent
-                  },
-                  {
-                      path: 'salary',
-                      component: SalarySettingsComponent
-                  },
-                  {
-                      path: 'notifications',
-                      component: NotificationsComponent
-                  },
-                  {
-                      path: 'change-password',
-                      component: ChangePasswordComponent
-                  },
-                  {
-                      path: 'leave-type',
-                      component: LeaveTypeComponent
-                  }
-              ]
-          },
-          { path: 'school-calendar', component: SchoolCalendarComponent },
-          { path: 'exams-timetable', component: ExamsTimetableComponent },
-          { path: 'holidays', component: HolidaysComponent },
-          { path: 'counter', component: CounterComponent },
-          { path: 'fetch-data', component: FetchDataComponent },
-          { path: '**', redirectTo: 'dashboard' },
-      ])
+    AppRoutingModule,
+      
   ],
   providers: [],
   bootstrap: [AppComponent]
