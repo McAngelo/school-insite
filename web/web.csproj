@@ -29,12 +29,12 @@
     <None Remove="ClientApp\src\app\accounts\" />
     <None Remove="ClientApp\src\app\payroll\" />
     <None Remove="ClientApp\src\app\reports\" />
-    <None Remove="ClientApp\src\app\settings\" />
     <None Remove="ClientApp\src\app\layout\" />
     <None Remove="ClientApp\src\app\modules\" />
     <None Remove="ClientApp\src\app\error\" />
     <None Remove="ClientApp\src\app\modules\auth\components\" />
     <None Remove="ClientApp\src\app\modules\error\components\" />
+    <None Remove="ClientApp\src\app\modules\settings\components\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\src\app\parents\" />
@@ -43,11 +43,11 @@
     <Folder Include="ClientApp\src\app\accounts\" />
     <Folder Include="ClientApp\src\app\payroll\" />
     <Folder Include="ClientApp\src\app\reports\" />
-    <Folder Include="ClientApp\src\app\settings\" />
     <Folder Include="ClientApp\src\app\layout\" />
     <Folder Include="ClientApp\src\app\modules\" />
     <Folder Include="ClientApp\src\app\modules\auth\components\" />
     <Folder Include="ClientApp\src\app\modules\error\components\" />
+    <Folder Include="ClientApp\src\app\modules\settings\components\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->

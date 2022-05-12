@@ -1,0 +1,11 @@
+﻿export * from './components/school-settings/school-settings.component';
+export * from './components/localization/localization.component';
+export * from './components/theme-settings/theme-settings.component';
+export * from './components/roles-permissions/roles-permissions.component';
+export * from './components/email-settings/email-settings.component';
+export * from './components/invoice-settings/invoice-settings.component';
+export * from './components/salary-settings/salary-settings.component';
+export * from './components/notifications/notifications.component';
+export * from './components/change-password/change-password.component';
+export * from './components/leave-type/leave-type.component';
+//import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component';

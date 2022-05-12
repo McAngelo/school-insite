@@ -187,52 +187,7 @@ import {
                   }
               ]
           },
-          {
-              path: 'settings',
-              children: [
-                  { path: '', redirectTo: 'school-info', pathMatch: 'prefix' },
-                  {
-                      path: 'school-info',
-                      component: SchoolSettingsComponent
-                  },
-                  {
-                      path: 'localization',
-                      component: LocalizationComponent
-                  },
-                  {
-                      path: 'theme',
-                      component: ThemeSettingsComponent
-                  },
-                  {
-                      path: 'roles-permissions',
-                      component: RolesPermissionsComponent
-                  },
-                  {
-                      path: 'email',
-                      component: EmailSettingsComponent
-                  },
-                  {
-                      path: 'invoice',
-                      component: InvoiceSettingsComponent
-                  },
-                  {
-                      path: 'salary',
-                      component: SalarySettingsComponent
-                  },
-                  {
-                      path: 'notifications',
-                      component: NotificationsComponent
-                  },
-                  {
-                      path: 'change-password',
-                      component: ChangePasswordComponent
-                  },
-                  {
-                      path: 'leave-type',
-                      component: LeaveTypeComponent
-                  }
-              ]
-          },
+          ,
           { path: 'school-calendar', component: SchoolCalendarComponent },
           { path: 'exams-timetable', component: ExamsTimetableComponent },
           { path: 'holidays', component: HolidaysComponent },

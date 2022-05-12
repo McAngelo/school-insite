@@ -54,17 +54,7 @@ import { EmployeeSalaryComponent } from './payroll/employee-salary/employee-sala
 import { PayslipComponent } from './payroll/payslip/payslip.component';
 import { ExpenseReportComponent } from './reports/expense-report/expense-report.component';
 import { InvoiceReportComponent } from './reports/invoice-report/invoice-report.component';
-import { SchoolSettingsComponent } from './settings/school-settings/school-settings.component';
-import { LocalizationComponent } from './settings/localization/localization.component';
-import { ThemeSettingsComponent } from './settings/theme-settings/theme-settings.component';
-import { RolesPermissionsComponent } from './settings/roles-permissions/roles-permissions.component';
-import { EmailSettingsComponent } from './settings/email-settings/email-settings.component';
-import { InvoiceSettingsComponent } from './settings/invoice-settings/invoice-settings.component';
-import { SalarySettingsComponent } from './settings/salary-settings/salary-settings.component';
-import { NotificationsComponent } from './settings/notifications/notifications.component';
-import { ChangePasswordComponent } from './settings/change-password/change-password.component';
-import { LeaveTypeComponent } from './settings/leave-type/leave-type.component';
-import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component';
+
 */
 
 
