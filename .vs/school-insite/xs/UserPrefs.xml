@@ -1,15 +1,25 @@
 ﻿<Properties StartupConfiguration="{D644513A-4E6E-4CC6-838F-9DC921C52640}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/styles.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/error/components/interal-server-error/interal-server-error.component.html">
     <Files>
-      <File FileName="web/ClientApp/src/app/layout/authentication-layout/authentication-layout.component.html" Line="3" Column="40" />
+      <File FileName="web/ClientApp/src/app/layout/authentication-layout/authentication-layout.component.html" Line="5" Column="7" />
       <File FileName="web/ClientApp/src/app/modules/auth/components/login/login.component.html" Line="22" Column="33" />
       <File FileName="web/ClientApp/src/app/layout/nav-menu/nav-menu.component.html" Line="16" Column="41" />
-      <File FileName="web/ClientApp/src/app/modules/auth/auth-routing.module.ts" Line="33" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/auth/auth-routing.module.ts" Line="38" Column="6" />
       <File FileName="web/ClientApp/src/app/modules/auth/components/forgotten-password/forgotten-password.component.html" Line="17" Column="24" />
       <File FileName="web/ClientApp/src/app/modules/auth/components/validate-account/validate-account.component.html" Line="7" Column="19" />
       <File FileName="web/ClientApp/src/app/modules/auth/components/change-password-client/change-password-client.component.html" Line="7" Column="19" />
       <File FileName="web/ClientApp/src/app/modules/auth/components/register/register.component.html" Line="29" Column="79" />
-      <File FileName="web/ClientApp/src/styles.css" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/styles.css" Line="1201" Column="5" />
+      <File FileName="web/ClientApp/src/app/app.component.ts" Line="10" Column="1" />
+      <File FileName="web/ClientApp/src/app/app.module.ts" Line="140" Column="5" />
+      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="256" Column="91" />
+      <File FileName="web/ClientApp/src/app/modules/error/error.module.ts" Line="16" Column="35" />
+      <File FileName="web/ClientApp/src/app/modules/error/error-routing.module.ts" Line="27" Column="10" />
+      <File FileName="web/ClientApp/src/app/modules/error/index.ts" Line="3" Column="28" />
+      <File FileName="web/ClientApp/src/app/modules/auth/index.ts" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/layout/error-layout/error-layout.component.html" Line="5" Column="7" />
+      <File FileName="web/ClientApp/src/app/modules/error/components/not-found-error/not-found-error.component.html" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/error/components/interal-server-error/interal-server-error.component.html" Line="8" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,10 +29,20 @@
               <Node name="ClientApp" expanded="True">
                 <Node name="src" expanded="True">
                   <Node name="app" expanded="True">
-                    <Node name="layout" expanded="True" />
-                    <Node name="modules" expanded="True" />
+                    <Node name="layout" expanded="True">
+                      <Node name="authentication-layout" expanded="True" />
+                      <Node name="error-layout" expanded="True" />
+                    </Node>
+                    <Node name="modules" expanded="True">
+                      <Node name="error" expanded="True">
+                        <Node name="components" expanded="True">
+                          <Node name="interal-server-error" expanded="True">
+                            <Node name="interal-server-error.component.html" selected="True" />
+                          </Node>
+                        </Node>
+                      </Node>
+                    </Node>
                   </Node>
-                  <Node name="styles.css" selected="True" />
                 </Node>
               </Node>
             </Node>

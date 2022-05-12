@@ -315,7 +315,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 }
 
 .cal-icon::after {
-    /*    background: transparent url("../img/calander.png") no-repeat scroll 0 0;*/
+    background: transparent url("../src/assets/img/calander.png") no-repeat scroll 0 0;
     bottom: 0;
     content: "";
     display: block;
@@ -5246,7 +5246,7 @@ blockquote p {
 }
 
 .profile-bg {
-    /*    background: url("../img/user-02.jpg");*/
+        background: url("../src/assets/img/user-02.jpg");
     background-size: cover;
     height: 141px;
     color: #fff;

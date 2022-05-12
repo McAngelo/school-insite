@@ -250,6 +250,11 @@ const routes: Routes = [
         component: AuthenticationLayoutComponent,
         loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule)
     },
+    {
+        path: '',
+        component: ErrorLayoutComponent,
+        loadChildren: () => import('./modules/error/error.module').then(m => m.ErrorModule)
+    },
     
     { path: '**', redirectTo: 'auth' },
     //{ path: '**', redirectTo: 'not-found' },

@@ -65,11 +65,7 @@ import { NotificationsComponent } from './settings/notifications/notifications.c
 import { ChangePasswordComponent } from './settings/change-password/change-password.component';
 import { LeaveTypeComponent } from './settings/leave-type/leave-type.component';
 import { TeacherListComponent } from './teachers/teacher-list/teacher-list.component';
-
-
-import { InteralServerErrorComponent } from './error/interal-server-error/interal-server-error.component';
-import { NotFoundErrorComponent } from './error/not-found-error/not-found-error.component';
-import { AccessDeniedErrorComponent } from './error/access-denied-error/access-denied-error.component';*/
+*/
 
 
 
@@ -141,9 +137,7 @@ import { AccessDeniedErrorComponent } from './error/access-denied-error/access-d
     ForgottenPasswordComponent,
     ValidateAccountComponent,
     ChangePasswordClientComponent,
-    InteralServerErrorComponent,
-    NotFoundErrorComponent,
-    AccessDeniedErrorComponent,*/
+    ,*/
 
 
 

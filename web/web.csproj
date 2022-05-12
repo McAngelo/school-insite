@@ -34,6 +34,7 @@
     <None Remove="ClientApp\src\app\modules\" />
     <None Remove="ClientApp\src\app\error\" />
     <None Remove="ClientApp\src\app\modules\auth\components\" />
+    <None Remove="ClientApp\src\app\modules\error\components\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\src\app\parents\" />
@@ -45,8 +46,8 @@
     <Folder Include="ClientApp\src\app\settings\" />
     <Folder Include="ClientApp\src\app\layout\" />
     <Folder Include="ClientApp\src\app\modules\" />
-    <Folder Include="ClientApp\src\app\error\" />
     <Folder Include="ClientApp\src\app\modules\auth\components\" />
+    <Folder Include="ClientApp\src\app\modules\error\components\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
