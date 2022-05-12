@@ -451,17 +451,23 @@ div.dataTables_wrapper div.dataTables_paginate {
 }
 
 .btn-primary {
-    background-color: #01c0c8;
-    border: 1px solid #01c0c8;
+    /*    background-color: #01c0c8;
+    border: 1px solid #01c0c8;*/
+    background-color: #3c8586;
+    border: 1px solid #3c8586;
 }
 
     .btn-primary:not(:disabled):not(.disabled):active {
         background-color: #01acb2;
         border: 1px solid #01c4cb;
+
+        
     }
 
     .btn-primary:hover, .btn-primary:focus, .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
-        background-color: #01acb2;
+        /*        background-color: #01acb2;
+        border: 1px solid #01c4cb;*/
+        background-color: #78bd99;
         border: 1px solid #01c4cb;
     }
 
@@ -1177,7 +1183,7 @@ textarea.form-control {
 }
 
 .account-page {
-    /*    background-image: url("../img/bg-account.jpeg");*/
+    background-image: url("../src/assets/img/bg-account.jpeg");
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -1201,7 +1207,8 @@ textarea.form-control {
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(68, 172, 178, 0.7);
+/*        background-color: rgba(68, 172, 178, 0.7);*/
+        background-color: rgba(120, 189, 153, 0.7);
     }
 
 .account-title {
