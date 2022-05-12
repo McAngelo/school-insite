@@ -35,7 +35,8 @@ const routes: Routes = [
                 component: ChangePasswordClientComponent
             }
         ]
-    },];
+    }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

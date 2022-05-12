@@ -2,8 +2,8 @@
     <h3 class="account-title text-white">Login</h3>
     <div class="account-box">
         <div class="account-wrapper">
-            <div class="account-logo">
-                <a href="index.html"><img src="assets/img/logo.png" alt="SchoolAdmin"></a>
+            <div class="account-logo" style="margin-bottom: 50px;">
+                <a href="index.html"><img src="./assets/logo-2.png" alt="SchoolAdmin"></a>
             </div>
             <form action="index.html">
                 <div class="form-group custom-mt-form-group">
@@ -18,7 +18,9 @@
                     <button class="btn btn-primary btn-block account-btn" type="submit">Login</button>
                 </div>
                 <div class="text-center">
-                    <a href="forgot-password.html">Forgot your password?</a>
+                    <a [routerLink]="['/auth/forgotten-password']">Forgot your password?</a>
+                    <br /><br />
+                    <a [routerLink]="['/auth/register']">Don't have an account?</a>
                 </div>
             </form>
         </div>

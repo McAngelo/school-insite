@@ -1,8 +1,14 @@
 ﻿<Properties StartupConfiguration="{D644513A-4E6E-4CC6-838F-9DC921C52640}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/auth/components/login/login.component.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/auth/components/register/register.component.html">
     <Files>
       <File FileName="web/ClientApp/src/app/layout/authentication-layout/authentication-layout.component.html" Line="3" Column="40" />
-      <File FileName="web/ClientApp/src/app/modules/auth/components/login/login.component.html" Line="26" Column="7" />
+      <File FileName="web/ClientApp/src/app/modules/auth/components/login/login.component.html" Line="21" Column="67" />
+      <File FileName="web/ClientApp/src/app/layout/nav-menu/nav-menu.component.html" Line="16" Column="41" />
+      <File FileName="web/ClientApp/src/app/modules/auth/auth-routing.module.ts" Line="33" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/auth/components/forgotten-password/forgotten-password.component.html" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/auth/components/validate-account/validate-account.component.html" Line="7" Column="19" />
+      <File FileName="web/ClientApp/src/app/modules/auth/components/change-password-client/change-password-client.component.html" Line="7" Column="19" />
+      <File FileName="web/ClientApp/src/app/modules/auth/components/register/register.component.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,11 +18,12 @@
               <Node name="ClientApp" expanded="True">
                 <Node name="src" expanded="True">
                   <Node name="app" expanded="True">
+                    <Node name="layout" expanded="True" />
                     <Node name="modules" expanded="True">
                       <Node name="auth" expanded="True">
                         <Node name="components" expanded="True">
-                          <Node name="login" expanded="True">
-                            <Node name="login.component.html" selected="True" />
+                          <Node name="register" expanded="True">
+                            <Node name="register.component.html" selected="True" />
                           </Node>
                         </Node>
                       </Node>
