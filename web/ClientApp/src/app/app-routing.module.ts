@@ -9,9 +9,6 @@ import {
 
 /*
     RouterModule.forRoot([
-          { path: '', component: DashboardComponent, pathMatch: 'full' },
-          { path: 'dashboard', component: DashboardComponent },
-          ,
           
           
           {
@@ -121,11 +118,7 @@ import {
               ]
           },
           ,
-          { path: 'school-calendar', component: SchoolCalendarComponent },
-          { path: 'exams-timetable', component: ExamsTimetableComponent },
-          { path: 'holidays', component: HolidaysComponent },
-          { path: 'counter', component: CounterComponent },
-          { path: 'fetch-data', component: FetchDataComponent },
+          
           { path: '**', redirectTo: 'dashboard' },
       ])
 */
@@ -157,6 +150,11 @@ const routes: Routes = [
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/teachers/teachers.module').then(m => m.TeachersModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/tools/tools.module').then(m => m.ToolsModule)
     },
     {
         path: '',

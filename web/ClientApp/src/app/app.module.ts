@@ -17,16 +17,14 @@ import {
 
 
 /*import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+
 
 
 import { SchoolCalendarComponent } from './school-calendar/school-calendar.component';
 import { EmailInboxComponent } from './email/email-inbox/email-inbox.component';
 import { ComposeEmailComponent } from './email/compose-email/compose-email.component';
 import { EmailViewComponent } from './email/email-view/email-view.component';
-import { ExamsTimetableComponent } from './exams-timetable/exams-timetable.component';
-import { HolidaysComponent } from './holidays/holidays.component';
+
 import { EmployeesComponent } from './management/employees/employees.component';
 import { LeaveRequestsComponent } from './management/leave-requests/leave-requests.component';
 import { AttendanceComponent } from './management/attendance/attendance.component';

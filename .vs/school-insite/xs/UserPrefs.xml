@@ -2,11 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/app-routing.module.ts">
     <Files>
-      <File FileName="web/ClientApp/src/app/app.module.ts" Line="16" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/parents/parents.module.ts" Line="6" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/parents/index.ts" Line="1" Column="9" />
-      <File FileName="web/ClientApp/src/app/modules/parents/parents-routing.module.ts" Line="11" Column="1" />
-      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="16" Column="11" />
+      <File FileName="web/ClientApp/src/app/modules/tools/tools.module.ts" Line="5" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/tools/tools-routing.module.ts" Line="12" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/tools/index.ts" Line="7" Column="72" />
+      <File FileName="web/ClientApp/src/app/app.server.module.ts" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/app.module.ts" Line="20" Column="1" />
+      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="14" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +21,7 @@
                       <Node name="side-bar" expanded="True" />
                     </Node>
                     <Node name="modules" expanded="True">
-                      <Node name="parents" expanded="True">
+                      <Node name="tools" expanded="True">
                         <Node name="components" expanded="True" />
                       </Node>
                     </Node>
