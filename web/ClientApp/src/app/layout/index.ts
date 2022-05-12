@@ -1,7 +1,4 @@
 ﻿
-/* Landing Page Layout Components */
-export * from './components/landing-page-header/landing-page-header.component';
-
 export * from './authentication-layout/authentication-layout.component';
 export * from './error-layout/error-layout.component';
 

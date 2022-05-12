@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{D644513A-4E6E-4CC6-838F-9DC921C52640}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/auth/auth.module.ts">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/auth/components/login/login.component.html">
     <Files>
-      <File FileName="web/ClientApp/src/app/modules/auth/index.tx" Line="6" Column="1" />
-      <File FileName="web/ClientApp/src/app/app.module.ts" Line="69" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/auth/auth.module.ts" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/layout/authentication-layout/authentication-layout.component.html" Line="3" Column="40" />
+      <File FileName="web/ClientApp/src/app/modules/auth/components/login/login.component.html" Line="26" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +14,11 @@
                   <Node name="app" expanded="True">
                     <Node name="modules" expanded="True">
                       <Node name="auth" expanded="True">
-                        <Node name="auth.module.ts" selected="True" />
+                        <Node name="components" expanded="True">
+                          <Node name="login" expanded="True">
+                            <Node name="login.component.html" selected="True" />
+                          </Node>
+                        </Node>
                       </Node>
                     </Node>
                   </Node>

@@ -244,76 +244,14 @@ import {
 
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'auth', pathMatch: 'full' },
     {
         path: '',
         component: AuthenticationLayoutComponent,
-        loadChildren: () => import('./modules/landing-page/landing-page.module').then(m => m.LandingPageModule)
+        loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule)
     },
-    /*{
-        path: '',
-        component: LandingPageComponent,
-        loadChildren: () => import('./modules/authentication/authentication.module').then(m => m.AuthenticationModule)
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/clients/clients.module').then(m => m.ClientsModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/cases/cases.module').then(m => m.CasesModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/property-information/property-information.module').then(m => m.PropertyInformationModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/settings/settings.module').then(m => m.SettingsModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/system-users/system-users.module').then(m => m.SystemUsersModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/task-manager/task-manager.module').then(m => m.TaskManagerModule),
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-        component: PortalComponent,
-        loadChildren: () => import('./modules/survey-integration/survey-integration.module').then(m => m.SurveyIntegrationModule),
-        canActivate: [AuthGuard]
-    },*/
-    /* {
-        path: '',
-        loadChildren: () => import('./modules/error-pages/error-pages.module').then(m => m.ErrorPagesModule)
-    }, */
-    { path: '**', redirectTo: 'home' },
+    
+    { path: '**', redirectTo: 'auth' },
     //{ path: '**', redirectTo: 'not-found' },
 
 ];
