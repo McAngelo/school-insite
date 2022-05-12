@@ -23,10 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\src\app\parents\" />
     <None Remove="ClientApp\src\app\email\" />
-    <None Remove="ClientApp\src\app\management\" />
-    <None Remove="ClientApp\src\app\accounts\" />
     <None Remove="ClientApp\src\app\payroll\" />
     <None Remove="ClientApp\src\app\reports\" />
     <None Remove="ClientApp\src\app\layout\" />
@@ -35,12 +32,19 @@
     <None Remove="ClientApp\src\app\modules\auth\components\" />
     <None Remove="ClientApp\src\app\modules\error\components\" />
     <None Remove="ClientApp\src\app\modules\settings\components\" />
+    <None Remove="ClientApp\src\app\modules\management\components\" />
+    <None Remove="ClientApp\src\app\modules\accounts\components\" />
+    <None Remove="ClientApp\src\app\modules\teachers\components\" />
+    <None Remove="ClientApp\src\app\modules\students\components\" />
+    <None Remove="ClientApp\src\app\modules\parents\components\" />
+    <None Remove="ClientApp\src\app\modules\tools\componnents\" />
+    <None Remove="ClientApp\src\app\modules\tools\componnents\exams-timetable\" />
+    <None Remove="ClientApp\src\app\modules\tools\componnents\school-calendar\" />
+    <None Remove="ClientApp\src\app\modules\tools\componnents\holidays\" />
+    <None Remove="ClientApp\src\app\modules\communications\components\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientApp\src\app\parents\" />
     <Folder Include="ClientApp\src\app\email\" />
-    <Folder Include="ClientApp\src\app\management\" />
-    <Folder Include="ClientApp\src\app\accounts\" />
     <Folder Include="ClientApp\src\app\payroll\" />
     <Folder Include="ClientApp\src\app\reports\" />
     <Folder Include="ClientApp\src\app\layout\" />
@@ -48,6 +52,16 @@
     <Folder Include="ClientApp\src\app\modules\auth\components\" />
     <Folder Include="ClientApp\src\app\modules\error\components\" />
     <Folder Include="ClientApp\src\app\modules\settings\components\" />
+    <Folder Include="ClientApp\src\app\modules\management\components\" />
+    <Folder Include="ClientApp\src\app\modules\accounts\components\" />
+    <Folder Include="ClientApp\src\app\modules\teachers\components\" />
+    <Folder Include="ClientApp\src\app\modules\students\components\" />
+    <Folder Include="ClientApp\src\app\modules\parents\components\" />
+    <Folder Include="ClientApp\src\app\modules\tools\componnents\" />
+    <Folder Include="ClientApp\src\app\modules\tools\componnents\exams-timetable\" />
+    <Folder Include="ClientApp\src\app\modules\tools\componnents\school-calendar\" />
+    <Folder Include="ClientApp\src\app\modules\tools\componnents\holidays\" />
+    <Folder Include="ClientApp\src\app\modules\communications\components\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
