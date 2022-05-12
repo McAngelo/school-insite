@@ -154,6 +154,11 @@ const routes: Routes = [
     {
         path: '',
         component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/financial/financial.module').then(m => m.FinancialModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
         loadChildren: () => import('./modules/tools/tools.module').then(m => m.ToolsModule)
     },
     {

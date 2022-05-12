@@ -48,6 +48,7 @@
     <None Remove="ClientApp\src\app\modules\landing-page\components\" />
     <None Remove="ClientApp\src\app\modules\landing-page\components\home\" />
     <None Remove="ClientApp\src\app\main\" />
+    <None Remove="ClientApp\src\app\modules\financial\components\payments\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\src\app\layout\" />
@@ -60,20 +61,21 @@
     <Folder Include="ClientApp\src\app\modules\teachers\components\" />
     <Folder Include="ClientApp\src\app\modules\students\components\" />
     <Folder Include="ClientApp\src\app\modules\parents\components\" />
-    <Folder Include="ClientApp\src\app\modules\tools\componnents\" />
-    <Folder Include="ClientApp\src\app\modules\tools\componnents\exams-timetable\" />
-    <Folder Include="ClientApp\src\app\modules\tools\componnents\school-calendar\" />
-    <Folder Include="ClientApp\src\app\modules\tools\componnents\holidays\" />
+    <Folder Include="ClientApp\src\app\modules\tools\components\" />
+    <Folder Include="ClientApp\src\app\modules\tools\components\exams-timetable\" />
+    <Folder Include="ClientApp\src\app\modules\tools\components\school-calendar\" />
+    <Folder Include="ClientApp\src\app\modules\tools\components\holidays\" />
     <Folder Include="ClientApp\src\app\modules\communications\components\" />
     <Folder Include="ClientApp\src\app\modules\dashboard\components\" />
     <Folder Include="ClientApp\src\app\modules\dashboard\components\dashboard\" />
-    <Folder Include="ClientApp\src\app\modules\tools\componnents\counter\" />
-    <Folder Include="ClientApp\src\app\modules\tools\componnents\fetch-data\" />
-    <Folder Include="ClientApp\src\app\modules\payments\components\" />
+    <Folder Include="ClientApp\src\app\modules\tools\components\counter\" />
+    <Folder Include="ClientApp\src\app\modules\tools\components\fetch-data\" />
+    <Folder Include="ClientApp\src\app\modules\financial\components\" />
     <Folder Include="ClientApp\src\app\modules\reports\components\" />
     <Folder Include="ClientApp\src\app\modules\landing-page\components\" />
     <Folder Include="ClientApp\src\app\modules\landing-page\components\home\" />
     <Folder Include="ClientApp\src\app\main\" />
+    <Folder Include="ClientApp\src\app\modules\financial\components\payments\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
