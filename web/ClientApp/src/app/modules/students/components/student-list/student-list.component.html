@@ -85,8 +85,8 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a href="profile.html" class="avatar">P</a>
-                                        <h2><a href="profile.html">Parker <span></span></a></h2>
+                                        <a [routerLink]="['/students/details']" class="avatar">P</a>
+                                        <h2><a [routerLink]="['/students/details']">Parker <span></span></a></h2>
                                     </td>
                                     <td>ST-0d001</td>
                                     <td>Male</td>
@@ -98,7 +98,7 @@
                                     <td>parker@example.com</td>
                                     <td>973-584-5870</td>
                                     <td class="text-right">
-                                        <a href="edit-student.html" class="btn btn-primary btn-sm mb-1">
+                                        <a [routerLink]="['/students/edit']" class="btn btn-primary btn-sm mb-1">
                                             Edit
                                         </a>
                                         <button type="submit" data-toggle="modal" data-target="#delete_employee" class="btn btn-danger btn-sm mb-1">

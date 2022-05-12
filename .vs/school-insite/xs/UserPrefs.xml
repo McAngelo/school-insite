@@ -2,16 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/students/components/student-list/student-list.component.html">
     <Files>
-      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="195" Column="100" />
-      <File FileName="web/ClientApp/src/app/modules/students/students-routing.module.ts" Line="22" Column="28" />
-      <File FileName="web/ClientApp/src/app/app.module.ts" Line="27" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/students/index.ts" Line="5" Column="28" />
-      <File FileName="web/ClientApp/src/app/modules/students/students.module.ts" Line="15" Column="20" />
-      <File FileName="web/ClientApp/src/app/modules/auth/index.ts" Line="1" Column="1" />
-      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="16" Column="30" />
-      <File FileName="web/ClientApp/src/app/modules/auth/auth-routing.module.ts" Line="1" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/students/components/all-students/all-students.component.html" Line="25" Column="120" />
-      <File FileName="web/ClientApp/src/app/modules/students/components/student-list/student-list.component.html" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/students/components/all-students/all-students.component.html" Line="69" Column="68" />
+      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="34" Column="64" />
+      <File FileName="web/ClientApp/src/app/modules/students/components/student-list/student-list.component.html" Line="88" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
