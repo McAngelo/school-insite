@@ -1,15 +1,17 @@
 ﻿<Properties StartupConfiguration="{05F1AF58-86B4-44D8-88D8-700E770E30D0}|Default">
   <MonoDevelop.Ide.ItemProperties.web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/auth/auth-routing.module.ts">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/students/components/student-list/student-list.component.html">
     <Files>
-      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="40" Column="11" />
-      <File FileName="web/ClientApp/src/app/modules/students/students-routing.module.ts" Line="10" Column="1" />
+      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="195" Column="100" />
+      <File FileName="web/ClientApp/src/app/modules/students/students-routing.module.ts" Line="22" Column="28" />
       <File FileName="web/ClientApp/src/app/app.module.ts" Line="27" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/students/index.ts" Line="4" Column="28" />
-      <File FileName="web/ClientApp/src/app/modules/students/students.module.ts" Line="6" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/students/index.ts" Line="5" Column="28" />
+      <File FileName="web/ClientApp/src/app/modules/students/students.module.ts" Line="15" Column="20" />
       <File FileName="web/ClientApp/src/app/modules/auth/index.ts" Line="1" Column="1" />
-      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="17" Column="50" />
+      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="16" Column="30" />
       <File FileName="web/ClientApp/src/app/modules/auth/auth-routing.module.ts" Line="1" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/students/components/all-students/all-students.component.html" Line="25" Column="120" />
+      <File FileName="web/ClientApp/src/app/modules/students/components/student-list/student-list.component.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,10 +25,15 @@
                       <Node name="side-bar" expanded="True" />
                     </Node>
                     <Node name="modules" expanded="True">
-                      <Node name="auth" expanded="True">
-                        <Node name="auth-routing.module.ts" selected="True" />
+                      <Node name="auth" expanded="True" />
+                      <Node name="students" expanded="True">
+                        <Node name="components" expanded="True">
+                          <Node name="all-students" expanded="True" />
+                          <Node name="student-list" expanded="True">
+                            <Node name="student-list.component.html" selected="True" />
+                          </Node>
+                        </Node>
                       </Node>
-                      <Node name="students" expanded="True" />
                     </Node>
                   </Node>
                 </Node>

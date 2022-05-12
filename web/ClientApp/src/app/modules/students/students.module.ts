@@ -7,9 +7,9 @@ import {
     AllStudentsComponent,
     AddStudentsComponent,
     EditStudentComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    StudentListComponent
 } from './';
-import { StudentListComponent } from './components/student-list/student-list.component';
 
 @NgModule({
     declarations: [
