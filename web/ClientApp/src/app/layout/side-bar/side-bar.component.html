@@ -7,7 +7,10 @@
                 <li class="" [routerLinkActive]="['active']">
                     <a [routerLink]="['/dashboard']"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
                 </li>
-                <li class="submenu">
+                <li class="" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/teachers']"><i class="fa fa-user" aria-hidden="true"></i> Teachers</a>
+                </li>
+                <!--<li class="submenu">
                     <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('teacher')" [ngClass]="t_status ? 'active subdrop' : ''"><i class="fa fa-user" aria-hidden="true"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': t_status ? 'block' : 'none'}">
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/all']">All Teachers</a></li>
@@ -15,9 +18,9 @@
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/edit']">Edit Teacher</a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/teachers/details']">About Teacher</a></li>
                     </ul>
-                </li>
+                </li>-->
                 <li class="submenu">
-                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('student')" [ngClass]="s_status ? 'active subdrop' : ''"><i class="fa fa-user" aria-hidden="true"></i> <span> Students</span> <span class="menu-arrow"></span></a>
+                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('student')" [ngClass]="s_status ? 'active subdrop' : ''"><i class="fa fa-users" aria-hidden="true"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': s_status ? 'block' : 'none'}">
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/students/all']">All Students</a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/students/add']">Add Student</a></li>
@@ -26,7 +29,7 @@
                     </ul>
                 </li>
                 <li class="submenu">
-                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('parent')" [ngClass]="p_status ? 'active subdrop' : ''"><i class="fa fa-user" aria-hidden="true"></i> <span> Parents</span> <span class="menu-arrow"></span></a>
+                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('parent')" [ngClass]="p_status ? 'active subdrop' : ''"><i class="fa fa-user-o" aria-hidden="true"></i> <span> Parents</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': p_status ? 'block' : 'none'}">
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/parents/all']">All Parents</a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/parents/add']">Add Parent</a></li>
@@ -43,8 +46,9 @@
                 <li class="" [routerLinkActive]="['active']">
                     <a [routerLink]="['/holidays']"><i class="fa fa-tasks" aria-hidden="true"></i> School Holidays</a>
                 </li>
-                <li class="submenu"> <!--class="noti-dot"-->
-                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('management')" [ngClass]="m_status ? 'active subdrop' : ''" ><i class="fa fa-rocket" aria-hidden="true"></i> <span>Management </span> <span class="menu-arrow"></span></a>
+                <li class="submenu">
+                    <!--class="noti-dot"-->
+                    <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('management')" [ngClass]="m_status ? 'active subdrop' : ''"><i class="fa fa-rocket" aria-hidden="true"></i> <span>Management </span> <span class="menu-arrow"></span></a>
                     <ul [ngStyle]="{'display': m_status ? 'block' : 'none'}">
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/management/all-employees']">All Employees</a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/management/leave-requests']"><span>Leave Requests</span> <span class="badge badge-pill bg-primary float-right">1</span></a></li>
