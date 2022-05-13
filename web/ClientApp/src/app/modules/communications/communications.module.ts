@@ -3,9 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { CommunicationsRoutingModule } from './communications-routing.module';
 
+import {
+    EmailInboxComponent,
+    EmailViewComponent,
+    ComposeEmailComponent
+} from './';
+
 
 @NgModule({
-  declarations: [],
+    declarations: [
+        EmailInboxComponent,
+        EmailViewComponent,
+        ComposeEmailComponent    ],
   imports: [
     CommonModule,
     CommunicationsRoutingModule

@@ -7,30 +7,6 @@ import {
     PortalLayoutComponent
 } from './layout';
 
-/*
-    RouterModule.forRoot([
-          
-          
-          {
-              path: 'email',
-              children: [
-                  { path: '', redirectTo: 'inbox', pathMatch: 'prefix' },
-                  {
-                      path: 'inbox',
-                      component: EmailInboxComponent
-                  },
-                  {
-                      path: 'compose',
-                      component: ComposeEmailComponent
-                  },
-                  {
-                      path: 'view',
-                      component: EmailViewComponent
-                  }
-              ]
-          },
-*/
-
 
 const routes: Routes = [
     { path: '', redirectTo: 'auth', pathMatch: 'full' },
@@ -82,6 +58,11 @@ const routes: Routes = [
     {
         path: '',
         component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/communications/communications.module').then(m => m.CommunicationsModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
         loadChildren: () => import('./modules/settings/settings.module').then(m => m.SettingsModule)
     },
     {
@@ -90,9 +71,7 @@ const routes: Routes = [
         loadChildren: () => import('./modules/error/error.module').then(m => m.ErrorModule)
     },
     
-    { path: '**', redirectTo: 'auth' },
-
-    //{ path: '**', redirectTo: 'not-found' },
+    { path: '**', redirectTo: 'auth' }
 
 ];
 

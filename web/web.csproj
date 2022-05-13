@@ -53,6 +53,9 @@
     <None Remove="ClientApp\src\app\modules\financial\components\invoices\" />
     <None Remove="ClientApp\src\app\modules\financial\components\provident-fund\" />
     <None Remove="ClientApp\src\app\modules\financial\components\taxes\" />
+    <None Remove="ClientApp\src\app\modules\communications\components\compose-email\" />
+    <None Remove="ClientApp\src\app\modules\communications\components\email-inbox\" />
+    <None Remove="ClientApp\src\app\modules\communications\components\email-view\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\src\app\layout\" />
@@ -84,6 +87,9 @@
     <Folder Include="ClientApp\src\app\modules\financial\components\invoices\" />
     <Folder Include="ClientApp\src\app\modules\financial\components\provident-fund\" />
     <Folder Include="ClientApp\src\app\modules\financial\components\taxes\" />
+    <Folder Include="ClientApp\src\app\modules\communications\components\compose-email\" />
+    <Folder Include="ClientApp\src\app\modules\communications\components\email-inbox\" />
+    <Folder Include="ClientApp\src\app\modules\communications\components\email-view\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
