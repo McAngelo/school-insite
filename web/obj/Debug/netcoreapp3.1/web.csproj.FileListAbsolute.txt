@@ -78,7 +78,6 @@
 /Users/mj-consult/Projects/school-insite/web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll
 /Users/mj-consult/Projects/school-insite/web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
 /Users/mj-consult/Projects/school-insite/web/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
-/Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.csproj.AssemblyReference.cache
 /Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.GeneratedMSBuildEditorConfig.editorconfig
 /Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.AssemblyInfoInputs.cache
 /Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.AssemblyInfo.cs
