@@ -29,25 +29,6 @@ import {
                   }
               ]
           },
-          
-          {
-              path: 'reports',
-              children: [
-                  { path: '', redirectTo: 'expense', pathMatch: 'prefix' },
-                  {
-                      path: 'expense',
-                      component: ExpenseReportComponent
-                  },
-                  {
-                      path: 'invoice',
-                      component: InvoiceReportComponent
-                  }
-              ]
-          },
-          ,
-          
-          { path: '**', redirectTo: 'dashboard' },
-      ])
 */
 
 
@@ -82,6 +63,11 @@ const routes: Routes = [
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/financial/financial.module').then(m => m.FinancialModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/reports/reports.module').then(m => m.ReportsModule)
     },
     {
         path: '',

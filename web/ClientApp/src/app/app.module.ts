@@ -26,15 +26,8 @@ import { ComposeEmailComponent } from './email/compose-email/compose-email.compo
 import { EmailViewComponent } from './email/email-view/email-view.component';
 
 
-import { InvoicesComponent } from './accounts/invoices/invoices.component';
-import { PaymentsComponent } from './accounts/payments/payments.component';
-import { ExpensesComponent } from './accounts/expenses/expenses.component';
-import { ProvidentFundComponent } from './accounts/provident-fund/provident-fund.component';
-import { TaxesComponent } from './accounts/taxes/taxes.component';
-import { EmployeeSalaryComponent } from './payroll/employee-salary/employee-salary.component';
-import { PayslipComponent } from './payroll/payslip/payslip.component';
-import { ExpenseReportComponent } from './reports/expense-report/expense-report.component';
-import { InvoiceReportComponent } from './reports/invoice-report/invoice-report.component';
+
+
 
 */
 

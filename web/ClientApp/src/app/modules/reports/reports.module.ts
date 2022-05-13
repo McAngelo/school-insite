@@ -3,9 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { ReportsRoutingModule } from './reports-routing.module';
 
+import {
+    ExpenseReportComponent,
+    InvoiceReportComponent
+} from './';
+
 
 @NgModule({
-  declarations: [],
+    declarations: [
+        ExpenseReportComponent,
+        InvoiceReportComponent
+    ],
   imports: [
     CommonModule,
     ReportsRoutingModule
