@@ -4,10 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import {
     EmailInboxComponent,
     EmailViewComponent,
-    ComposeEmailComponent
+    ComposeEmailComponent,
+    ChatComponent
 } from './';
 
-const routes: Routes = [{
+const routes: Routes = [
+    { path: 'chat', component: ChatComponent },
+    {
     path: 'email',
     children: [
         { path: '', redirectTo: 'inbox', pathMatch: 'prefix' },

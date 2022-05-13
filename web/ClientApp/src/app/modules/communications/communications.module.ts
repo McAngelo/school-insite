@@ -6,7 +6,8 @@ import { CommunicationsRoutingModule } from './communications-routing.module';
 import {
     EmailInboxComponent,
     EmailViewComponent,
-    ComposeEmailComponent
+    ComposeEmailComponent,
+    ChatComponent
 } from './';
 
 
@@ -14,7 +15,9 @@ import {
     declarations: [
         EmailInboxComponent,
         EmailViewComponent,
-        ComposeEmailComponent    ],
+        ComposeEmailComponent,
+        ChatComponent
+    ],
   imports: [
     CommonModule,
     CommunicationsRoutingModule

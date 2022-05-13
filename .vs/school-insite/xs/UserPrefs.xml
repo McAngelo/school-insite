@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{05F1AF58-86B4-44D8-88D8-700E770E30D0}|Default">
   <MonoDevelop.Ide.ItemProperties.web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/communications/components/email-view/email-view.component.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/communications/components/chat/chat.component.html">
     <Files>
       <File FileName="web/ClientApp/angular.json" Line="35" Column="30" />
       <File FileName="web/ClientApp/src/app/modules/communications/components/email-inbox/email-inbox.component.html" Line="129" Column="97" />
-      <File FileName="web/ClientApp/src/app/modules/communications/communications-routing.module.ts" Line="23" Column="24" />
+      <File FileName="web/ClientApp/src/app/modules/communications/communications-routing.module.ts" Line="12" Column="18" />
       <File FileName="web/ClientApp/src/app/modules/communications/components/email-view/email-view.component.html" Line="315" Column="7" />
+      <File FileName="web/ClientApp/src/app/modules/communications/communications.module.ts" Line="10" Column="18" />
+      <File FileName="web/ClientApp/src/app/modules/communications/index.ts" Line="4" Column="9" />
+      <File FileName="web/ClientApp/src/app/modules/tools/tools-routing.module.ts" Line="14" Column="5" />
+      <File FileName="web/ClientApp/src/app/modules/communications/components/chat/chat.component.html" Line="714" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,18 +19,15 @@
               <Node name="ClientApp" expanded="True">
                 <Node name="src" expanded="True">
                   <Node name="app" expanded="True">
-                    <Node name="layout" expanded="True">
-                      <Node name="side-bar" expanded="True" />
-                    </Node>
                     <Node name="modules" expanded="True">
                       <Node name="communications" expanded="True">
                         <Node name="components" expanded="True">
-                          <Node name="email-inbox" expanded="True" />
-                          <Node name="email-view" expanded="True">
-                            <Node name="email-view.component.html" selected="True" />
+                          <Node name="chat" expanded="True">
+                            <Node name="chat.component.html" selected="True" />
                           </Node>
                         </Node>
                       </Node>
+                      <Node name="tools" expanded="True" />
                     </Node>
                   </Node>
                   <Node name="assets" expanded="True">
