@@ -49,6 +49,10 @@
     <None Remove="ClientApp\src\app\modules\landing-page\components\home\" />
     <None Remove="ClientApp\src\app\main\" />
     <None Remove="ClientApp\src\app\modules\financial\components\payments\" />
+    <None Remove="ClientApp\src\app\modules\financial\components\expenses\" />
+    <None Remove="ClientApp\src\app\modules\financial\components\invoices\" />
+    <None Remove="ClientApp\src\app\modules\financial\components\provident-fund\" />
+    <None Remove="ClientApp\src\app\modules\financial\components\taxes\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\src\app\layout\" />
@@ -76,6 +80,10 @@
     <Folder Include="ClientApp\src\app\modules\landing-page\components\home\" />
     <Folder Include="ClientApp\src\app\main\" />
     <Folder Include="ClientApp\src\app\modules\financial\components\payments\" />
+    <Folder Include="ClientApp\src\app\modules\financial\components\expenses\" />
+    <Folder Include="ClientApp\src\app\modules\financial\components\invoices\" />
+    <Folder Include="ClientApp\src\app\modules\financial\components\provident-fund\" />
+    <Folder Include="ClientApp\src\app\modules\financial\components\taxes\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->

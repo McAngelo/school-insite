@@ -32,18 +32,19 @@
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/school-fees']"> School Fees </a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/pay']"> Pay </a></li>
                         <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/payroll']"> Payroll </a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/invoices']">Invoices</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/expenses']">Expenses</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/provident-fund']">Provident Fund</a></li>
+                        <li [routerLinkActive]="['active']"><a [routerLink]="['/finance/taxes']">Taxes</a></li>
                     </ul>
                 </li>
-                <li class="submenu">
+                <!--<li class="submenu">
                     <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('accounts')" [ngClass]="ac_status ? 'active subdrop' : ''"><i class="fa fa-book" aria-hidden="true"></i><span> Accounts </span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': ac_status ? 'block' : 'none'}">
 
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/accounts/invoices']">Invoices</a></li>
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/accounts/expenses']">Expenses</a></li>
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/accounts/provident-fund']">Provident Fund</a></li>
-                        <li [routerLinkActive]="['active']"><a [routerLink]="['/accounts/taxes']">Taxes</a></li>
+                       
                     </ul>
-                </li>
+                </li>-->
                 <li class="submenu">
                     <a href="javascript:void(0);" [routerLinkActive]="['active subdrop']" (click)="triggerDrop('report')" [ngClass]="r_status ? 'active subdrop' : ''"><i class="fa fa-files-o" aria-hidden="true"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled" [ngStyle]="{'display': r_status ? 'block' : 'none'}">
