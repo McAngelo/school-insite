@@ -1,17 +1,13 @@
 ﻿<Properties StartupConfiguration="{05F1AF58-86B4-44D8-88D8-700E770E30D0}|Default">
   <MonoDevelop.Ide.ItemProperties.web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/modules/financial/components/school-fees/school-fees.component.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web/ClientApp/src/app/app-routing.module.ts">
     <Files>
-      <File FileName="web/ClientApp/src/app/modules/financial/financial.module.ts" Line="10" Column="22" />
-      <File FileName="web/ClientApp/src/app/modules/financial/financial-routing.module.ts" Line="23" Column="40" />
-      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="66" Column="22" />
-      <File FileName="web/ClientApp/src/app/modules/financial/index.ts" Line="5" Column="58" />
-      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="157" Column="103" />
-      <File FileName="web/ClientApp/src/app/modules/accounts/accounts.module.ts" Line="1" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/financial/components/payments/payments.component.html" Line="1" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/financial/components/payslip/payslip.component.html" Line="1" Column="1" />
-      <File FileName="web/ClientApp/src/app/modules/financial/components/pay/pay.component.html" Line="6" Column="43" />
-      <File FileName="web/ClientApp/src/app/modules/financial/components/school-fees/school-fees.component.html" Line="6" Column="40" />
+      <File FileName="web/ClientApp/src/app/layout/side-bar/side-bar.component.html" Line="54" Column="17" />
+      <File FileName="web/ClientApp/src/app/app.module.ts" Line="28" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/management/index.ts" Line="1" Column="9" />
+      <File FileName="web/ClientApp/src/app/modules/management/management.module.ts" Line="6" Column="1" />
+      <File FileName="web/ClientApp/src/app/modules/management/management-routing.module.ts" Line="13" Column="1" />
+      <File FileName="web/ClientApp/src/app/app-routing.module.ts" Line="32" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,20 +17,12 @@
               <Node name="ClientApp" expanded="True">
                 <Node name="src" expanded="True">
                   <Node name="app" expanded="True">
-                    <Node name="layout" expanded="True">
-                      <Node name="side-bar" expanded="True" />
-                    </Node>
                     <Node name="modules" expanded="True">
-                      <Node name="accounts" expanded="True" />
-                      <Node name="financial" expanded="True">
-                        <Node name="components" expanded="True">
-                          <Node name="pay" expanded="True" />
-                          <Node name="school-fees" expanded="True">
-                            <Node name="school-fees.component.html" selected="True" />
-                          </Node>
-                        </Node>
+                      <Node name="management" expanded="True">
+                        <Node name="components" expanded="True" />
                       </Node>
                     </Node>
+                    <Node name="app-routing.module.ts" selected="True" />
                   </Node>
                 </Node>
               </Node>

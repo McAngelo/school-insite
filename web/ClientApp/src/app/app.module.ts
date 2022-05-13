@@ -25,13 +25,7 @@ import { EmailInboxComponent } from './email/email-inbox/email-inbox.component';
 import { ComposeEmailComponent } from './email/compose-email/compose-email.component';
 import { EmailViewComponent } from './email/email-view/email-view.component';
 
-import { EmployeesComponent } from './management/employees/employees.component';
-import { LeaveRequestsComponent } from './management/leave-requests/leave-requests.component';
-import { AttendanceComponent } from './management/attendance/attendance.component';
-import { DepartmentsComponent } from './management/departments/departments.component';
-import { DesignationsComponent } from './management/designations/designations.component';
-import { ActivitiesComponent } from './management/activities/activities.component';
-import { UsersComponent } from './management/users/users.component';
+
 import { InvoicesComponent } from './accounts/invoices/invoices.component';
 import { PaymentsComponent } from './accounts/payments/payments.component';
 import { ExpensesComponent } from './accounts/expenses/expenses.component';

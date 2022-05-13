@@ -29,80 +29,7 @@ import {
                   }
               ]
           },
-          {
-              path: 'management',
-              children: [
-                  { path: '', redirectTo: 'all-employees', pathMatch: 'prefix' },
-                  {
-                      path: 'all-employees',
-                      component: EmployeesComponent
-                  },
-                  {
-                      path: 'leave-requests',
-                      component: LeaveRequestsComponent
-                  },
-                  {
-                      path: 'attendance',
-                      component: AttendanceComponent
-                  },
-                  {
-                      path: 'departments',
-                      component: DepartmentsComponent
-                  },
-                  {
-                      path: 'designations',
-                      component: DesignationsComponent
-                  },
-                  {
-                      path: 'activities',
-                      component: ActivitiesComponent
-                  },
-                  {
-                      path: 'users',
-                      component: UsersComponent
-                  }
-              ]
-          },
-          {
-              path: 'accounts',
-              children: [
-                  { path: '', redirectTo: 'invoices', pathMatch: 'prefix' },
-                  {
-                      path: 'invoices',
-                      component: InvoicesComponent
-                  },
-                  {
-                      path: 'payments',
-                      component: PaymentsComponent
-                  },
-                  {
-                      path: 'expenses',
-                      component: ExpensesComponent
-                  },
-                  {
-                      path: 'provident-fund',
-                      component: ProvidentFundComponent
-                  },
-                  {
-                      path: 'taxes',
-                      component: TaxesComponent
-                  }
-              ]
-          },
-          {
-              path: 'payroll',
-              children: [
-                  { path: '', redirectTo: 'employee-salary', pathMatch: 'prefix' },
-                  {
-                      path: 'employee-salary',
-                      component: EmployeeSalaryComponent
-                  },
-                  {
-                      path: 'pay-slip',
-                      component: PayslipComponent
-                  }
-              ]
-          },
+          
           {
               path: 'reports',
               children: [
@@ -155,6 +82,11 @@ const routes: Routes = [
         path: '',
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/financial/financial.module').then(m => m.FinancialModule)
+    },
+    {
+        path: '',
+        component: PortalLayoutComponent,
+        loadChildren: () => import('./modules/management/management.module').then(m => m.ManagementModule)
     },
     {
         path: '',
