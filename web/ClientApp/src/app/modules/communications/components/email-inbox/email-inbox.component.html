@@ -22,7 +22,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-3">
-                <a href="compose.html" class="btn btn-primary btn-block mt-1">Compose</a>
+                <a [routerLink]="['/email/compose']" class="btn btn-primary btn-block mt-1">Compose</a>
                 <div class="roles-menu">
                     <ul>
                         
@@ -126,7 +126,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="unread clickable-row" data-href="mail-view.html">
+                                    <tr class="unread clickable-row" [routerLink]="['/email/view']">
                                         <td>
                                             <input type="checkbox" class="checkmail">
                                         </td>
