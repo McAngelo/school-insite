@@ -101,3 +101,4 @@
 /Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.dll
 /Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.pdb
 /Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.genruntimeconfig.cache
+/Users/mj-consult/Projects/school-insite/web/obj/Debug/netcoreapp3.1/web.csproj.AssemblyReference.cache
