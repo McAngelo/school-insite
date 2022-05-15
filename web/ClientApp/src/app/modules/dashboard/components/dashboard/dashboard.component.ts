@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MorrisJsModule } from 'angular-morris-js';
+import Morris  from 'morris';
+import $ from 'jquery';
 declare var $: any;
 declare var Morris: any;
 
@@ -22,21 +25,27 @@ export class DashboardComponent implements OnInit {
         redraw: true
     };
 
+    public chartDonutOptions;
+
+    public chartAreaData: any = [
+        { label: "Download Sales", value: 12 },
+        { label: "In-Store Sales", value: 30 },
+        { label: "Mail-Order Sales", value: 20 }
+    ];
+
   constructor() { }
 
     ngOnInit() {
 
-        this.donut.data.push(
-            //{ label: "Owners", value: this.dashboardData.ownerOccupied },
-            //{ label: "Tenants", value: this.dashboardData.renterOccupied },
-            //{ label: "Caretakers", value: this.dashboardData.caretakerOccupied }
-
-            { label: "Friends", value: 30 },
-            { label: "Allies", value: 15 },
-            { label: "Enemies", value: 45 },
-            { label: "Neutral", value: 10 }
-        );
-        Morris.Donut(this.donut);
+        Morris.Donut({
+            element: 'pie-chart',
+            data: [
+                { label: "Friends", value: 30 },
+                { label: "Allies", value: 15 },
+                { label: "Enemies", value: 45 },
+                { label: "Neutral", value: 10 }
+            ]
+        });
 
     }
 
