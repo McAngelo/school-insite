@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using api.Interfaces;
 using api.Models;
 
-namespace api.Services
+namespace api.Repositories
 {
     public class DataAccessProvider: ITodoRepository
     {
