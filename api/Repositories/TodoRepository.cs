@@ -7,11 +7,11 @@ using api.Models;
 
 namespace api.Repositories
 {
-    public class DataAccessProvider: ITodoRepository
+    public class TodoRepository: ITodoRepository
     {
         private readonly PostgreSqlContext _dbContext;
 
-        public DataAccessProvider(PostgreSqlContext context)
+        public TodoRepository(PostgreSqlContext context)
         {
             _dbContext = context;
         }
