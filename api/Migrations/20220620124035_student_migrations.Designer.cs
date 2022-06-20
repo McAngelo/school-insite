@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using api.Models;
@@ -9,9 +10,10 @@ using api.Models;
 namespace api.Migrations
 {
     [DbContext(typeof(PostgreSqlContext))]
-    partial class PostgreSqlContextModelSnapshot : ModelSnapshot
+    [Migration("20220620124035_student_migrations")]
+    partial class student_migrations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,7 +45,7 @@ namespace api.Migrations
 
                     b.HasIndex("CurrentTeacherId");
 
-                    b.ToTable("ClassRooms");
+                    b.ToTable("ClassRoom");
                 });
 
             modelBuilder.Entity("api.Models.ClassSubject", b =>
@@ -66,11 +68,16 @@ namespace api.Migrations
                     b.Property<string>("SubjectName")
                         .HasColumnType("text");
 
+                    b.Property<string>("SubjectTeacherId")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClassRoomId");
 
-                    b.ToTable("ClassSubjects");
+                    b.HasIndex("SubjectTeacherId");
+
+                    b.ToTable("ClassSubject");
                 });
 
             modelBuilder.Entity("api.Models.Parent", b =>
@@ -111,30 +118,14 @@ namespace api.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Parents");
-                });
-
-            modelBuilder.Entity("api.Models.ParentStudents", b =>
-                {
                     b.Property<string>("StudentId")
                         .HasColumnType("text");
 
-                    b.Property<string>("ParentId")
-                        .HasColumnType("text");
+                    b.HasKey("Id");
 
-                    b.Property<DateTime>("DateCreated")
-                        .HasColumnType("timestamp without time zone");
+                    b.HasIndex("StudentId");
 
-                    b.Property<DateTime>("DateUpdated")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.HasKey("StudentId", "ParentId");
-
-                    b.HasIndex("ParentId");
-
-                    b.ToTable("ParentStudents");
+                    b.ToTable("Parent");
                 });
 
             modelBuilder.Entity("api.Models.Student", b =>
@@ -205,7 +196,10 @@ namespace api.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("text");
 
-                    b.Property<string>("ClassSubjectId")
+                    b.Property<string>("AdmissionNo")
+                        .HasColumnType("text");
+
+                    b.Property<string>("CurrentClass")
                         .HasColumnType("text");
 
                     b.Property<DateTime>("DateCreated")
@@ -241,11 +235,12 @@ namespace api.Migrations
                     b.Property<string>("Section")
                         .HasColumnType("text");
 
+                    b.Property<string>("StudentId")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ClassSubjectId");
-
-                    b.ToTable("Teachers");
+                    b.ToTable("Teacher");
                 });
 
             modelBuilder.Entity("api.Models.TodoItem", b =>
@@ -267,7 +262,7 @@ namespace api.Migrations
             modelBuilder.Entity("api.Models.ClassRoom", b =>
                 {
                     b.HasOne("api.Models.Teacher", "CurrentTeacher")
-                        .WithMany("CurrentClass")
+                        .WithMany()
                         .HasForeignKey("CurrentTeacherId");
                 });
 
@@ -276,21 +271,17 @@ namespace api.Migrations
                     b.HasOne("api.Models.ClassRoom", null)
                         .WithMany("Subjects")
                         .HasForeignKey("ClassRoomId");
+
+                    b.HasOne("api.Models.Teacher", "SubjectTeacher")
+                        .WithMany()
+                        .HasForeignKey("SubjectTeacherId");
                 });
 
-            modelBuilder.Entity("api.Models.ParentStudents", b =>
+            modelBuilder.Entity("api.Models.Parent", b =>
                 {
-                    b.HasOne("api.Models.Parent", "Parent")
-                        .WithMany("Students")
-                        .HasForeignKey("ParentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("api.Models.Student", "Student")
-                        .WithMany("Parents")
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("api.Models.Student", null)
+                        .WithMany("Parent")
+                        .HasForeignKey("StudentId");
                 });
 
             modelBuilder.Entity("api.Models.Student", b =>
@@ -298,13 +289,6 @@ namespace api.Migrations
                     b.HasOne("api.Models.ClassRoom", "CurrentClass")
                         .WithMany()
                         .HasForeignKey("CurrentClassId");
-                });
-
-            modelBuilder.Entity("api.Models.Teacher", b =>
-                {
-                    b.HasOne("api.Models.ClassSubject", null)
-                        .WithMany("SubjectTeacher")
-                        .HasForeignKey("ClassSubjectId");
                 });
 #pragma warning restore 612, 618
         }

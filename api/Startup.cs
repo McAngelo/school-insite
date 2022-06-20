@@ -26,7 +26,10 @@ namespace api
             var sqlConnectionString = Configuration["ConnectionStrings:SchoolInsiteConnection"];  
             
             services.AddDbContext<PostgreSqlContext>(options => options.UseNpgsql(sqlConnectionString));
+            
+            // DB scopes
             services.AddScoped<ITodoRepository, TodoRepository>();
+            services.AddScoped<IStudentRepository, StudentsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

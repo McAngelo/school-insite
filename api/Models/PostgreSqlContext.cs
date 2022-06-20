@@ -13,10 +13,27 @@ namespace api.Models
         }
 
         public DbSet<TodoItem> TodoItems { get; set; }
-        public DbSet<WeatherForecast> WeatherForecasts { get; set; }
+        public DbSet<ClassRoom> ClassRooms { get; set; }
+        public DbSet<ClassSubject> ClassSubjects { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Parent> Parents { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<ParentStudents>()
+                .HasKey(t => new { t.StudentId, t.ParentId});
+            
+            builder.Entity<ParentStudents>()
+                .HasOne(pt => pt.Student)
+                .WithMany(p => p.Parents)
+                .HasForeignKey(pt => pt.StudentId);
+            
+            builder.Entity<ParentStudents>()
+                .HasOne(pt => pt.Parent)
+                .WithMany(p => p.Students)
+                .HasForeignKey(pt => pt.ParentId);
+
             base.OnModelCreating(builder);
         }
 
