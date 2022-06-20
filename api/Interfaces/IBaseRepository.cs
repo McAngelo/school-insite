@@ -1,19 +1,19 @@
-using System.Linq.Expressions;
 using System;
+using System.Linq.Expressions;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.Common;
+using System.Threading.Tasks;
 
 namespace api.Interfaces
 {
-    public interface IBaseRepository<T> where T : class
+    public interface IBaseRepository<TEntity> where TEntity : class
     {
-        T GetById(string id);
-        IEnumerable<T> GetAll();
-        IEnumerable<T> Find(Expression<Func<T, bool>> expression);
-        void Add(T entity);
-        void AddRange(IEnumerable<T> entities);
-        void Remove(T entity);
-        void RemoveRange(IEnumerable<T> entities);
+        Task<IList<TEntity>> GetAllAsync();
+        Task<TEntity> GetByIdAsync(string id);
+        //Task<IList<TEntity>> FindAsync(Expression<Func<TEntity, bool>> expression);
+        Task<TEntity> CreateAsync(TEntity entity);
+        //Task<TEntity> AddRange(IEnumerable<TEntity> entities);
+        Task<TEntity> UpdateAsync(TEntity entity);
+        Task<bool> DeleteAsync(string id);
+        //Task<bool> RemoveRange(IEnumerable<TEntity> entities);
     }
 }
