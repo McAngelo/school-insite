@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZAzcxOkrZsTQzEyYDIfoH0f3wy5CpmdwcD0d4clrRaObvs9W0t4rFLkN/pwaUwKBDMK80pMNC4fFbTvpv8vUUA==",
+  "dgSpecHash": "HItAwnMGsKgAQmKEjkdE7QkkcFTArSX/sF86iPaVKDjjucQIh8Et/Y5baPVWqpG1XfHCf0KPapc94kMLlX6RQg==",
   "success": true,
   "projectFilePath": "/Users/mj-consult/Projects/school-insite/api/api.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,8 @@
     "/Users/mj-consult/.nuget/packages/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/npgsql/4.1.3/npgsql.4.1.3.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/npgsql.entityframeworkcore.postgresql/3.1.3/npgsql.entityframeworkcore.postgresql.3.1.3.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/nuget.frameworks/4.7.0/nuget.frameworks.4.7.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -139,7 +141,7 @@
     "/Users/mj-consult/.nuget/packages/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/system.runtime.caching/4.5.0/system.runtime.caching.4.5.0.nupkg.sha512",
-    "/Users/mj-consult/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg.sha512",
     "/Users/mj-consult/.nuget/packages/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg.sha512",

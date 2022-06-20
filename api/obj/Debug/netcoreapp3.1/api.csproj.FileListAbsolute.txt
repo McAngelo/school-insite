@@ -32,8 +32,6 @@
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/api.csproj.CoreCompileInputs.cache
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/api.MvcApplicationPartsAssemblyInfo.cache
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/staticwebassets/api.StaticWebAssets.Manifest.cache
-/Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/staticwebassets/api.StaticWebAssets.xml
-/Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/scopedcss/bundle/api.styles.css
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/api.RazorTargetAssemblyInfo.cache
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/api.dll
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/api.pdb
@@ -173,3 +171,8 @@
 /Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/mj-consult/Projects/school-insite/api/obj/Debug/netcoreapp3.1/api.csproj.CopyComplete
+/Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/api
+/Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/contracts.dll
+/Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/contracts.pdb
+/Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/mj-consult/Projects/school-insite/api/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -6,32 +6,34 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using api.Models;
+using api.Interfaces;
 
 namespace api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/todo")]
     [ApiController]
     public class TodoItemsController : ControllerBase
     {
-        private readonly TodoContext _context;
-
-        public TodoItemsController(TodoContext context)
+        private readonly ITodoRepository _todoRepository;
+        public TodoItemsController(ITodoRepository todoRepository)
         {
-            _context = context;
+            _todoRepository = todoRepository;
         }
 
         // GET: api/TodoItems
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
         {
-            return await _context.TodoItems.ToListAsync();
+            //return await _dataAccessProvider.GetAllTodoItems();
+            return _todoRepository.GetAllTodoItems().ToList();
         }
 
         // GET: api/TodoItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+        public async Task<ActionResult<TodoItem>> GetTodoItem(string id)
         {
-            var todoItem = await _context.TodoItems.FindAsync(id);
+            //var todoItem = await _context.TodoItems.FindAsync(id);
+            var todoItem = _todoRepository.GetSingleTodoItem(id);
 
             if (todoItem == null)
             {
@@ -45,32 +47,14 @@ namespace api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
+        public async Task<IActionResult> PutTodoItem(TodoItem todoItem)
         {
-            if (id != todoItem.Id)
+            if (ModelState.IsValid)
             {
-                return BadRequest();
+                _todoRepository.UpdateTodoRecord(todoItem);
+                return Ok();
             }
-
-            _context.Entry(todoItem).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TodoItemExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return BadRequest();
         }
 
         // POST: api/TodoItems
@@ -79,31 +63,35 @@ namespace api.Controllers
         [HttpPost]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
         {
-            _context.TodoItems.Add(todoItem);
-            await _context.SaveChangesAsync();
+            if(ModelState.IsValid){
+                Guid obj = Guid.NewGuid();
+                todoItem.Id = obj.ToString();
+                _todoRepository.AddTodoRecord(todoItem);
+                return Ok();
+            }
+            return BadRequest();
 
-            return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
+            //return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
         }
 
         // DELETE: api/TodoItems/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TodoItem>> DeleteTodoItem(long id)
+        public async Task<ActionResult<TodoItem>> DeleteTodoItem(string id)
         {
-            var todoItem = await _context.TodoItems.FindAsync(id);
-            if (todoItem == null)
+            var data = _todoRepository.GetSingleTodoItem(id);
+            
+            if(data == null)
             {
                 return NotFound();
             }
 
-            _context.TodoItems.Remove(todoItem);
-            await _context.SaveChangesAsync();
-
-            return todoItem;
+            _todoRepository.DeleteTodoRecord(id);
+            return Ok();
         }
 
-        private bool TodoItemExists(long id)
+        /* private bool TodoItemExists(string id)
         {
             return _context.TodoItems.Any(e => e.Id == id);
-        }
+        } */
     }
 }

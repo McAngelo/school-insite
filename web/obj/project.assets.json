@@ -569,7 +569,7 @@
       "outputPath": "/Users/mj-consult/Projects/school-insite/web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mj-consult/.config/NuGet/NuGet.Config"
+        "/Users/mj-consult/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -616,7 +616,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
