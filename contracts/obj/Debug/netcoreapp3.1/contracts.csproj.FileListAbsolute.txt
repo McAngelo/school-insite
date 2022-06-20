@@ -1,0 +1,10 @@
+/Users/mj-consult/Projects/school-insite/contracts/bin/Debug/netcoreapp3.1/contracts.deps.json
+/Users/mj-consult/Projects/school-insite/contracts/bin/Debug/netcoreapp3.1/contracts.dll
+/Users/mj-consult/Projects/school-insite/contracts/bin/Debug/netcoreapp3.1/contracts.pdb
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.csproj.AssemblyReference.cache
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.AssemblyInfoInputs.cache
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.AssemblyInfo.cs
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.csproj.CoreCompileInputs.cache
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.dll
+/Users/mj-consult/Projects/school-insite/contracts/obj/Debug/netcoreapp3.1/contracts.pdb

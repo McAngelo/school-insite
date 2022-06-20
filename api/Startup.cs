@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using api.Models;
 using api.Interfaces;
 using api.Repositories;
+using Microsoft.OpenApi.Models;
 
 namespace api
 {
@@ -22,14 +23,21 @@ namespace api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             var sqlConnectionString = Configuration["ConnectionStrings:SchoolInsiteConnection"];  
-            
             services.AddDbContext<PostgreSqlContext>(options => options.UseNpgsql(sqlConnectionString));
             
+            // AutoMapper Configuration
+            services.AddAutoMapper(typeof(Startup));
+
             // DB scopes
             services.AddScoped<ITodoRepository, TodoRepository>();
             services.AddScoped<IStudentRepository, StudentsRepository>();
+
+            services.AddControllers();
+
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo{ Title = "", Version = "v1"});
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

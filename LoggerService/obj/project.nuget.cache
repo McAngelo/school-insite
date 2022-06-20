@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "OCjnZocMot9YvqLT0/LQhl1IcoQ09P0c1ghokXRoVjGKcFCSFTwQnh6pzbd09YMWL/v6Q4j/nQ2TnazK4x7CXw==",
+  "success": true,
+  "projectFilePath": "/Users/mj-consult/Projects/school-insite/LoggerService/LoggerService.csproj",
+  "expectedPackageFiles": [
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.0/microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/nlog/5.0.0/nlog.5.0.0.nupkg.sha512",
+    "/Users/mj-consult/.nuget/packages/nlog.extensions.logging/5.0.0/nlog.extensions.logging.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
